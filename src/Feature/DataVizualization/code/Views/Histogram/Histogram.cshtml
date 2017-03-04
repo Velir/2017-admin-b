@@ -10,7 +10,7 @@
   @Model.MessageIsEmpty
 }
 else
-    if (Model.DataUrl == null || string.IsNullOrWhiteSpace(Model.DataUrl.ToString()) || string.IsNullOrWhiteSpace(Model.DateColumnName) || System.IO.Path.GetExtension(Model.DataUrl.AbsolutePath) != ".csv")
+    if (Model.DataUrl == null || string.IsNullOrWhiteSpace(Model.DataUrl.ToString()) || string.IsNullOrWhiteSpace(Model.DateColumnName) || System.IO.Path.GetExtension(Model.DataUrl.ToString()) != ".csv")
     {
     @Model.MessageRequiredFieldMissing
     }
