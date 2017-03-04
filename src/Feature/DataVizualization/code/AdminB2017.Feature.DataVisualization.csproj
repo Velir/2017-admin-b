@@ -72,7 +72,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.XA.Foundation.SitecoreExtensions">
-      <HintPath>..\..\..\..\..\..\Websites\hack2017b\Website\bin\Sitecore.XA.Foundation.SitecoreExtensions.dll</HintPath>
+      <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.SitecoreExtensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />

@@ -50,6 +50,15 @@ You can customize DatVizPak in several different ways.
 
 ### [Add customizations here]
 
+## Developer Bootstrap
+
+Want to develop for DatVizPak? Great! To get started developing for DatVizPak, you must first do some things:
+
+* Add SXA assemblies to the /lib folder.
+ * Because SXA DLLs are not available yet on Sitecore's NuGet feed, you must manually add them here.
+ * See [here](/lib#sxa-dependencies "/lib/readme.md") for details.
+* 
+
 ## About the Authors
 
 DatVizPak was created by the [Velir](https://www.velir.com "Velir") team admin/b (Dan Solovay, Nicole Durand, Ed Schwehm) as part of [2017 Sitecore Hackathon](http://www.sitecorehackathon.org/sitecore-hackathon-2017/ "Sitecore Hackathon 2017").
