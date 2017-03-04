@@ -1,4 +1,7 @@
-﻿<div id="TODOAddinGuid">
+﻿@{
+  var guid = Guid.NewGuid().ToString("N");
+}
+<div id="@guid" >
   <script src="http://d3js.org/d3.v4.min.js"></script>
   <script>
     var parseDate = d3.timeParse("%m/%d/%Y %H:%M:%S %p"),
@@ -24,7 +27,7 @@
 
     //Create the svg drawing area in the appropriate div
     //TODO: dynamically get id of container div
-    var divId = "TODOAddinGuid";
+    var divId = "@guid";
     var svg = d3.select("#" + divId).append("svg")
       .attr("width", "100%")
       .attr("viewBox", "0 0 " + (width + margin.left + margin.right) + " " + (height + margin.top + margin.bottom))
