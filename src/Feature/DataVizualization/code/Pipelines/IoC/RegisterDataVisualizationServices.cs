@@ -13,6 +13,7 @@ namespace AdminB2017.Feature.DataVisualization.Pipelines.IoC
     public override void Process(IocArgs args)
     {
       ServiceCollectionServiceExtensions.AddTransient<IHistogramRepository, HistogramRepository>(args.ServiceCollection);
+      ServiceCollectionServiceExtensions.AddTransient<IScatterPlotRepository, ScatterPlotRepository>(args.ServiceCollection);
     }
   }
 }

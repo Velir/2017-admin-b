@@ -9,18 +9,18 @@ using Sitecore.XA.Foundation.Mvc.Controllers;
 
 namespace AdminB2017.Feature.DataVisualization.Controllers
 {
-  public class HistogramController : StandardController
-  {
-    private readonly IHistogramRepository _histogramRepository;
+  public class ScatterPlotController : StandardController
+  { 
+    private readonly IScatterPlotRepository _scatterPlotRepository;
 
-    public HistogramController(IHistogramRepository histogramRepository)
+    public ScatterPlotController(IScatterPlotRepository scatterPlotRepository)
     {
-      _histogramRepository = histogramRepository;
+      _scatterPlotRepository = scatterPlotRepository;
     }
 
     protected override object GetModel()
     {
-      return _histogramRepository.GetModel();
+      return _scatterPlotRepository.GetModel();
     }
   }
 }
