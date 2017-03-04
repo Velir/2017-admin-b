@@ -22,7 +22,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminB2017.Project.Website"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataVisualization", "DataVisualization", "{14C6C433-C2EC-4940-A7C1-BFC6CAEB3C99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataVisualization", "src\Feature\DataVizualization\code\DataVisualization.csproj", "{C85B7450-02FC-43CE-A6F9-0989876A92EA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminB2017.Feature.DataVisualization", "src\Feature\DataVizualization\code\AdminB2017.Feature.DataVisualization.csproj", "{C85B7450-02FC-43CE-A6F9-0989876A92EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
