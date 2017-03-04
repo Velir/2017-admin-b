@@ -94,12 +94,6 @@ Save and close the datasource, and voilà, you have a visualization!
 
 DatVizPak allows for content editors to configure visualizations to pull from data sources hosted on an external site. However, the external site must have [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing "CORS") enabled or DatVizPak will not be able to load the data. To visualize data from external sites without CORS enabled, download the data from the external site and upload the data to Sitecore. 
 
-## Customizing DatVizPak
-
-You can customize DatVizPak in several different ways.
-
-### [Add customizations here]
-
 ## Known Issues
 
 DatVizPak Mark I has several known issues. The notable issues are listed below; you can find the full list at [/issues](https://github.com/Velir/admin-b/issues "issues"): 
