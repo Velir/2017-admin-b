@@ -24,7 +24,7 @@ else
             height = 500 - margin.top - margin.bottom;
 
           // parse the date / time
-          var parseTime = d3.timeParse("%d-%b-%y");
+          var parseTime = d3.timeParse("%m/%d/%Y %H:%M:%S %p")
           var formatTime = d3.timeFormat("%e %B");
 
           // set the ranges
@@ -53,24 +53,24 @@ else
             // format the data
             data.forEach(function (d) {
               d.date = parseTime(d.date);
-              d.pointVal = +d.pointVal;
+              d.close = +d.close;
             });
             // scale the range of the data
             x.domain(d3.extent(data, function (d) { return d.date; }));
-            y.domain([0, d3.max(data, function (d) { return d.pointVal; })]);
+            y.domain([0, d3.max(data, function (d) { return d.close; })]);
             // add the dots with tooltips
             svg.selectAll("dot")
               .data(data)
               .enter().append("circle")
               .attr("r", 5)
               .attr("cx", function (d) { return x(d.date); })
-              .attr("cy", function (d) { return y(d.pointVal); })
+              .attr("cy", function (d) { return y(d.close); })
               .on("mouseover", function (d) {
                 div.transition()
                   .duration(200)
                   .style("opacity", .9);
-                div.html(formatTime(d.date) + "<br/>" + d.pointVal)
-                  .style("left", (d3.event.pageX) + "px")
+                div.html(formatTime(d.date) + "<br/>" + d.close)
+                  .style("left", (d3.event.pageX - 520) + "px")
                   .style("top", (d3.event.pageY - 28) + "px");
               })
               .on("mouseout", function (d) {
@@ -89,7 +89,7 @@ else
 
           function type(d) {
             d.date = parseDate(d["@Model.DateColumnName"]);
-            d.pointVal = +d["@Model.ValueColumnName"];
+            d.close = +d["@Model.ValueColumnName"];
             return d;
           }
         </script>
