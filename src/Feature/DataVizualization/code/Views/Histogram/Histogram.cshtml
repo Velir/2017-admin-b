@@ -1,101 +1,121 @@
 ﻿
 @using AdminB2017.Feature.DataVisualization.Models
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+
 @model HistogramRenderingModel
 
-@{
-  var guid = Guid.NewGuid().ToString("N");
+
+@if (Model.DataSourceItem == null)
+{
+  <text>[Datasource Empty]</text>
+  @Model.MessageIsEmpty
 }
-<div id="@Model.Id" >
-  <script src="http://d3js.org/d3.v4.min.js"></script>
-  <script>
-    var parseDate = d3.timeParse("%m/%d/%Y %H:%M:%S %p"),
-        formatCount = d3.format(",.0f");
+else
+{
 
-    var margin = { top: 10, right: 30, bottom: 30, left: 30 },
-        width = 960 - margin.left - margin.right,
-        height = 500 - margin.top - margin.bottom;
+  <text>[Histogram Component]</text>
+  @*<div @Html.Sxa().Component("histogram", Model.Attributes)>*@
+  @*<div class="component-content" style="height: 100%"; width: 100%">
+    @Model.MessageEditHere
+ 
+      <div id="@Model.Id">
+        <script src="http://d3js.org/d3.v4.min.js"></script>
+        <script>
+          var parseDate = d3.timeParse("%m/%d/%Y %H:%M:%S %p"),
+            formatCount = d3.format(",.0f");
 
-    var x = d3.scaleTime()
-        .domain([new Date("@Model.FromDate.ToString("O")"), new Date("@Model.ToDate.ToString("O")")])
-        .rangeRound([0, width]);
+          var margin = { top: 10, right: 30, bottom: 30, left: 30 },
+            width = 960 - margin.left - margin.right,
+            height = 500 - margin.top - margin.bottom;
 
-    var y = d3.scaleLinear()
-        .range([height, 0]);
+          var x = d3.scaleTime()
+            .domain([new Date("@Model.FromDate.ToString("O")"), new Date("@Model.ToDate.ToString("O")")])
+            .rangeRound([0, width]);
 
-    var histogram = d3.histogram()
-      .value(function(d) { return d.date; })
-      .domain(x.domain())
+          var y = d3.scaleLinear()
+            .range([height, 0]);
 
-    @{
-      switch (Model.TimePeriod)
-      {
-          case TimePeriods.Day:
-           <text>.thresholds(x.ticks(d3.timeDay));</text>
-           break;
-          case TimePeriods.Month:
-           <text>.thresholds(x.ticks(d3.timeMonth));</text>
-           break;
-          case TimePeriods.Week:
-            <text>.thresholds(x.ticks(d3.timeWeek));</text>
-           break;
-      }
-    }
+          var histogram = d3.histogram()
+            .value(function(d) { return d.date; })
+            .domain(x.domain())
 
-
-
-    //Create the svg drawing area in the appropriate div
-
-    var divId = "@Model.Id";
-    var svg = d3.select("#" + divId).append("svg")
-      .attr("width", "100%")
-      .attr("viewBox", "0 0 " + (width + margin.left + margin.right) + " " + (height + margin.top + margin.bottom))
-      .attr("preserveAspectRatio", "xMinYMin meet")
-      .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-    svg.append("g")
-        .attr("class", "axis axis--x")
-        .attr("transform", "translate(0," + height + ")")
-        .call(d3.axisBottom(x));
-
-    //read from data source
-    d3.csv("@Model.DataUrl", type, function (error, data) {
-      if (error) throw error;
-
-      var bins = histogram(data);
-
-      y.domain([0, d3.max(bins, function (d) { return d.length; })]);
-
-      var bar = svg.selectAll(".bar")
-          .data(bins)
-          .enter().append("g")
-          .attr("class", "bar")
-          .attr("transform", function (d) { return "translate(" + x(d.x0) + "," + y(d.length) + ")"; });
-
-      bar.append("rect")
-          .attr("x", 1)
-          .attr("width", function (d) { return x(d.x1) - x(d.x0) - 1; })
-          .attr("height", function (d) { return height - y(d.length); });
+            @{
+              switch (Model.TimePeriod)
+              {
+                case TimePeriods.Day:
+                  <text>.thresholds(x.ticks(d3.timeDay));</text>
+                  break;
+                case TimePeriods.Month:
+                  <text>.
+          thresholds(x.ticks(d3.timeMonth));</text>
+                  break;
+                case TimePeriods.Week:
+                  <text>.
+          thresholds(x.ticks(d3.timeWeek));</text>
+                  break;
+              }
+            }
 
 
-      @if (Model.ShowLabels)
-      {
-        <text>
-      bar.append("text")
-          .attr("dy", ".75em")
-          .attr("y", 6)
-          .attr("x", function (d) { return (x(d.x1) - x(d.x0)) / 2; })
-          .attr("text-anchor", "middle")
-          .text(function (d) { return formatCount(d.length); });
-      </text>
-      }
-      
-    });
+          //Create the svg drawing area in the appropriate div
 
-    function type(d) {
-      d.date = parseDate(d["@Model.DateColumnName"]);
-      return d;
-    }
+          var divId = "@Model.Id";
+          var svg = d3.select("#" + divId).append("svg")
+            .attr("width", "100%")
+            .attr("viewBox", "0 0 " + (width + margin.left + margin.right) + " " + (height + margin.top + margin.bottom))
+            .attr("preserveAspectRatio", "xMinYMin meet")
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  </script>
-</div>
+          svg.append("g")
+            .attr("class", "axis axis--x")
+            .attr("transform", "translate(0," + height + ")")
+            .call(d3.axisBottom(x));
+
+          //read from data source
+          d3.csv("@Model.DataUrl", type, function(error, data) {
+            if (error) throw error;
+
+            var bins = histogram(data);
+
+            y.domain([0, d3.max(bins, function(d) { return d.length; })]);
+
+            var bar = svg.selectAll(".bar")
+              .data(bins)
+              .enter().append("g")
+              .attr("class", "bar")
+              .attr("transform", function(d) { return "translate(" + x(d.x0) + "," + y(d.length) + ")"; });
+
+            bar.append("rect")
+              .attr("x", 1)
+              .attr("width", function(d) { return x(d.x1) - x(d.x0) - 1; })
+              .attr("height", function(d) { return height - y(d.length); });
+
+
+            @if (Model.ShowLabels)
+            {
+              <text>
+            bar.append("text")
+              .attr("dy", ".75em")
+              .attr("y", 6)
+              .attr("x", function(d) { return (x(d.x1) - x(d.x0)) / 2; })
+              .attr("text-anchor", "middle")
+              .text(function(d) { return formatCount(d.length); });
+            </text>
+            }
+
+          });
+
+          function type(d) {
+            d.date = parseDate(d["@Model.DateColumnName"]);
+            return d;
+          }
+
+        </script>
+      </div>
+ 
+    </div>*@
+   
+  @*</div>*@
+}

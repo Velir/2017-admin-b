@@ -13,6 +13,7 @@ namespace AdminB2017.Feature.DataVisualization.Repositories
     public override IRenderingModelBase GetModel()
     {
       HistogramRenderingModel model = new HistogramRenderingModel();
+      this.FillBaseProperties(model);
       model.TimePeriod = TimePeriods.Month;
       model.DataUrl =new Uri("https://data.cityofnewyork.us/api/views/3q43-55fe/rows.csv");
       model.ShowLabels = true;
