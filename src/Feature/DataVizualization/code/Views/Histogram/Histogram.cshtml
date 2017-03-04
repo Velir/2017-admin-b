@@ -1,5 +1,4 @@
-﻿
-@using AdminB2017.Feature.DataVisualization.Models
+﻿@using AdminB2017.Feature.DataVisualization.Models
 @using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
 @using Sitecore.XA.Foundation.MarkupDecorator.Extensions
 
@@ -8,15 +7,13 @@
 
 @if (Model.DataSourceItem == null)
 {
-  <text>[Datasource Empty]</text>
   @Model.MessageIsEmpty
 }
 else
 {
 
-  <text>[Histogram Component]</text>
-  @*<div @Html.Sxa().Component("histogram", Model.Attributes)>*@
-  @*<div class="component-content" style="height: 100%"; width: 100%">
+  <div @Html.Sxa().Component("histogram", Model.Attributes)>
+  <div class="component-content" style="height: 100%"; width: 100%">
     @Model.MessageEditHere
  
       <div id="@Model.Id">
@@ -115,7 +112,7 @@ else
         </script>
       </div>
  
-    </div>*@
+    </div>
    
-  @*</div>*@
+  </div>
 }

@@ -20,10 +20,10 @@ namespace AdminB2017.Feature.DataVisualization.Models
     /// Used to identify DIV to D3.js
     /// </summary>
     public string Id { get { return _id; } }
-    
-    public DateTime FromDate { get { return  new DateTime(2016,2,1);} }
 
-    public DateTime ToDate { get { return new DateTime(2016,4,1);} }
+    public DateTime FromDate { get { return new DateTime(2016, 2, 1); } }
+
+    public DateTime ToDate { get { return new DateTime(2016, 4, 1); } }
 
     public TimePeriods TimePeriod { get; set; }
 
@@ -34,5 +34,5 @@ namespace AdminB2017.Feature.DataVisualization.Models
     public string DateColumnName { get; set; }
   }
 
- 
+
 }
