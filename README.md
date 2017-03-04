@@ -74,7 +74,7 @@ Select the datasource (or create a new one) and click "OK".
 
 ![Datasource](https://i.imgur.com/uOiDySP.png)
 
-**_KNOWN ISSUE ALERT_**: The first visualization added to any page will not show up in experience editor, and the save button will not be enabled. To save the component, make an edit to some other part of the page and save the page. The visualization will properly appear after saving. This issue is documents as [#30](/issues/30 "#30"). This will be fixed in DatVizPak Mark II.
+**_KNOWN ISSUE ALERT_**: The first visualization added to any page will not show up in experience editor, and the save button will not be enabled. To save the component, make an edit to some other part of the page and save the page. The visualization will properly appear after saving. This issue is documents as [#30](https://github.com/Velir/admin-b//issues/30 "#30"). This will be fixed in DatVizPak Mark II.
 
 After inserting a data visualization component, component properties will pop up. Configure the properties for the data visualization and click "OK". 
 
