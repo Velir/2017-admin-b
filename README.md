@@ -28,6 +28,20 @@ DatVizPak comes with several data visualizations out of the box.
 
 Histograms are graphical representations of the frequency of data events, usually over a range of time (read more at [Wikipedia](https://en.wikipedia.org/wiki/Histogram "Wikipedia")). 
 
+#### Histogram Parameters
+
+Histogram visualizations in DatVizPak have several fields required for configuration. These fields are available on the datasource item. 
+
+* **Data**: A link to the actual source of data. The data must be in a comma-separated list (CSV). 
+* **From Date**: The date the histogram will start. The default value is one month before the current day
+* **To Date**: The date the histogram will end.
+ * _N.B. If you select a from date earlier than the start of data or a to date later than the end of data, the histogram will still extend to the dates configured with zero-columns._
+* **Time Period**: The length of time that each histogram column will represent. Options are day, week, and month.
+* **Date Column Name**: The name of the column in the data that represents the date to be used for the x-axis. 
+ * _N.B. This field is case-sensitive._
+
+Additionally, the "Show Labels" check box is available on the component properties. If checked, the histogram will include labels of the data value on each column. 
+
 ### Scatter Plot 
 
 Scatter plots are plots of data points on a Cartesian graph (read more at [Wikipedia](https://en.wikipedia.org/wiki/Scatter_plot "Wikipedia")).

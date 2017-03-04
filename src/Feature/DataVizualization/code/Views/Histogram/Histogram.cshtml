@@ -10,10 +10,9 @@
   @Model.MessageIsEmpty
 }
 else
-{
     if (Model.DataUrl == null || string.IsNullOrWhiteSpace(Model.DataUrl.ToString()) || string.IsNullOrWhiteSpace(Model.DateColumnName) || System.IO.Path.GetExtension(Model.DataUrl.AbsolutePath) != ".csv")
     {
-        @Model.MessageRequiredFieldMissing
+    @Model.MessageRequiredFieldMissing
     }
 
   <div @Html.Sxa().Component("histogram", Model.Attributes)>
@@ -48,12 +47,10 @@ else
                   <text>.thresholds(x.ticks(d3.timeDay));</text>
                   break;
                 case TimePeriods.Month:
-                  <text>.
-          thresholds(x.ticks(d3.timeMonth));</text>
+                  <text>.thresholds(x.ticks(d3.timeMonth));</text>
                   break;
                 case TimePeriods.Week:
-                  <text>.
-          thresholds(x.ticks(d3.timeWeek));</text>
+                  <text>.thresholds(x.ticks(d3.timeWeek));</text>
                   break;
               }
             }
