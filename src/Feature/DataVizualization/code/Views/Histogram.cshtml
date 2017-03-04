@@ -21,7 +21,7 @@
     </style>
 </head>
 <body>
-    <div> 
+    <div id="TODOAddinGuid"> 
         <script src="//d3js.org/d3.v4.min.js"></script>
         <script>
             var parseDate = d3.timeParse("%m/%d/%Y %H:%M:%S %p"),
@@ -45,8 +45,10 @@
                 .thresholds(x.ticks(d3.timeWeek));
 	            //TODO: Configure data grouping - day, week, month
 
-            //Create the svg drawing area
-            var svg = d3.select("body").append("svg")
+            //Create the svg drawing area in the appropriate div
+            //TODO: dynamically get id of container div
+            var divId = "TODOAddinGuid";
+            var svg = d3.select("#" + divId).append("svg")
 	            .attr("width", "100%")
 	            .attr("viewBox", "0 0 " + (width + margin.left + margin.right) + " " + (height + margin.top + margin.bottom))
 	            .attr("preserveAspectRatio", "xMinYMin meet")
