@@ -74,6 +74,8 @@ Select the datasource (or create a new one) and click "OK".
 
 ![Datasource](https://i.imgur.com/uOiDySP.png)
 
+**_KNOWN ISSUE ALERT_**: The first visualization added to any page will not show up in experience editor, and the save button will not be enabled. To save the component, make an edit to some other part of the page and save the page. The visualization will properly appear after saving. This issue is documents as [#30](/issues/30 "#30"). This will be fixed in DatVizPak Mark II.
+
 After inserting a data visualization component, component properties will pop up. Configure the properties for the data visualization and click "OK". 
 
 The visualization component will be present on the page. If you created a new datasource,  the visualization will be blank.
@@ -98,6 +100,21 @@ You can customize DatVizPak in several different ways.
 
 ### [Add customizations here]
 
+## Known Issues
+
+DatVizPak Mark I has several known issues. The notable issues are listed below; you can find the full list at [/issues](/issues "issues"): 
+
+* First visualization added to a page does not show at first or set page as "dirty": [#30](/issues/30 "#30") and [#28](/issues/28 "#28")
+* Only one instance of each type of visualization can be added to a page: [#29](/issues/29 "#29")
+
+These notable issues will be resolved in DatVizPak Mark II.
+
+## Roadmap
+
+1. DatVizPak Mark II:
+ 1. Resolve issues [#28](/issues/28 "#28"), [#29](/issues/29 "#29"), and [#30](/issues/30 "#30").  
+ 2. Update visualizations to act more in line with "Wireframe" theme ([#24](/issues/24 "#24")).
+
 ## Developer Bootstrap
 
 Want to develop for DatVizPak? Great! To get started developing for DatVizPak, you must first do some things:
@@ -105,7 +122,7 @@ Want to develop for DatVizPak? Great! To get started developing for DatVizPak, y
 * Add SXA assemblies to the /lib folder.
  * Because SXA DLLs are not available yet on Sitecore's NuGet feed, you must manually add them here.
  * See [here](/lib#sxa-dependencies "/lib/readme.md") for details.
-* 
+* It's probably a good idea to either publish the entire site or publish all non-content items, just to be sure. 
 
 ## About the Authors
 
