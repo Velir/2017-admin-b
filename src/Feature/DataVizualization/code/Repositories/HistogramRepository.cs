@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Web;
 using AdminB2017.Feature.DataVisualization.Models;
 using Sitecore.XA.Foundation.Mvc.Repositories.Base;
@@ -11,7 +12,10 @@ namespace AdminB2017.Feature.DataVisualization.Repositories
   {
     public override IRenderingModelBase GetModel()
     {
-      return new HistogramRenderingModel();
+      HistogramRenderingModel model = new HistogramRenderingModel();
+      model.Period = Period.Month;
+      model.DataUrl =new HtmlString("https://data.cityofnewyork.us/api/views/3q43-55fe/rows.csv");
+      return model;
     }
   }
 }

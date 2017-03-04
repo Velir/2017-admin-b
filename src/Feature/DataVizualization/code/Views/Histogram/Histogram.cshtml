@@ -1,10 +1,11 @@
 ﻿
+@using AdminB2017.Feature.DataVisualization.Models
 @model AdminB2017.Feature.DataVisualization.Models.HistogramRenderingModel
 
 @{
   var guid = Guid.NewGuid().ToString("N");
 }
-<div id="@guid" >
+<div id="@Model.Id" >
   <script src="http://d3js.org/d3.v4.min.js"></script>
   <script>
     var parseDate = d3.timeParse("%m/%d/%Y %H:%M:%S %p"),
@@ -16,21 +17,36 @@
 
     //TODO: configure data range
     var x = d3.scaleTime()
-        .domain([new Date(2016, 0, 1), new Date(2017, 5, 1)])
+        .domain([new Date("@Model.FromDate.ToString("O")"), new Date("@Model.ToDate.ToString("O")")])
         .rangeRound([0, width]);
 
     var y = d3.scaleLinear()
         .range([height, 0]);
 
     var histogram = d3.histogram()
-        .value(function (d) { return d.date; })
-        .domain(x.domain())
-        .thresholds(x.ticks(d3.timeWeek));
-    //TODO: Configure data grouping - day, week, month
+      .value(function(d) { return d.date; })
+      .domain(x.domain())
+
+    @{
+      switch (Model.Period)
+      {
+          case Period.Day:
+           <text>.thresholds(x.ticks(d3.timeDay));</text>
+           break;
+          case Period.Month:
+           <text>.thresholds(x.ticks(d3.timeMonth));</text>
+           break;
+          case Period.Week:
+            <text>.thresholds(x.ticks(d3.timeWeek));</text>
+           break;
+      }
+    }
+
+
 
     //Create the svg drawing area in the appropriate div
-    //TODO: dynamically get id of container div
-    var divId = "@guid";
+
+    var divId = "@Model.Id";
     var svg = d3.select("#" + divId).append("svg")
       .attr("width", "100%")
       .attr("viewBox", "0 0 " + (width + margin.left + margin.right) + " " + (height + margin.top + margin.bottom))
@@ -45,7 +61,7 @@
 
     //TODO: Configure data source
     //read from data source
-    d3.csv("https://data.cityofnewyork.us/api/views/3q43-55fe/rows.csv", type, function (error, data) {
+    d3.csv("@Model.DataUrl", type, function (error, data) {
       if (error) throw error;
 
       var bins = histogram(data);
