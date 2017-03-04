@@ -38,7 +38,6 @@
             var formatTime = d3.timeFormat("%e %B");
 
             // set the ranges
-            //TODO: if we want to exchange this with histogram, we can make this configurable as well
             var x = d3.scaleTime().range([0, width]);
             var y = d3.scaleLinear().range([height, 0]);
 
@@ -59,17 +58,14 @@
                 .attr("transform",
                       "translate(" + margin.left + "," + margin.top + ")");
             // Get the data
-            //TODO: source this
             d3.csv("data.csv", function(error, data) {
               if (error) throw error;
               // format the data
               data.forEach(function(d) {
                   d.date = parseTime(d.date);
-                  //TODO: source "pointVal"
-                  d.pointVal = +d.close;
+                  d.pointVal = +d.pointVal;
               });
                 // scale the range of the data
-                //TODO: source datefield below
               x.domain(d3.extent(data, function(d) { return d.date; }));
               y.domain([0, d3.max(data, function (d) { return d.pointVal; })]);
               // add the dots with tooltips
@@ -82,7 +78,7 @@
                  .on("mouseover", function(d) {
                    div.transition()
                      .duration(200)
-                     .style("opacity", .9); 
+                     .style("opacity", .9);
                      div.html(formatTime(d.date) + "<br/>" + d.pointVal)
                      .style("left", (d3.event.pageX) + "px")
                      .style("top", (d3.event.pageY - 28) + "px");
@@ -100,6 +96,14 @@
               svg.append("g")
                   .call(d3.axisLeft(y));
             });
+
+            function type(d) {
+                //TODO: source datecol
+                d.date = parseDate(d["@Model.DateColumnName"]);
+                //TODO: source "pointVal"
+                d.pointVal = +d["@Model.ValueColumnName"];
+                return d;
+            }
         </script>
     </div>
 </body>
