@@ -32,6 +32,8 @@ namespace AdminB2017.Feature.DataVisualization.Models
     public bool ShowLabels { get; set; }
 
     public string DateColumnName { get; set; }
+
+        public string MessageRequiredFieldMissing {  get { return "Your datasource is missing some required information.  You must supply a data link to a valid csv and the dat column name."; } }
   }
 
  
