@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Web;
 using Sitecore.Data.Fields;
 using Sitecore.Mvc.Diagnostics;
 using Sitecore.XA.Foundation.Mvc.Models;
@@ -19,7 +20,7 @@ namespace AdminB2017.Feature.DataVisualization.Models
     public string Id { get { return _id; } }
  
 
-    public Uri DataUrl { get; set; }
+    public HtmlString DataUrl { get; set; }
 
     public void SetDataUrl(LinkField linkField)
     {
@@ -35,7 +36,7 @@ namespace AdminB2017.Feature.DataVisualization.Models
 
       if (!string.IsNullOrEmpty(theUrl))
       {
-        DataUrl = new Uri(theUrl);
+        DataUrl = new HtmlString(theUrl);
       }
     }
  
