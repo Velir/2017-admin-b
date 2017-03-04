@@ -1,0 +1,119 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Sunburst</title>
+    <style>
+        path {
+        stroke: #fff;
+        }
+
+        div.tooltip {
+        position: absolute;
+        text-align: center;
+        padding: 7px;
+        font: 12px sans-serif;
+        background: lightsteelblue;
+        border: 0px;
+        border-radius: 8px;
+        pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="TODOAddinGuid3">
+        <script src="http://d3js.org/d3.v4.min.js"></script>
+
+        <script>
+            //NOTE: json will need to have a name defined, the object used for value needs to be numeric, but the name is configurable
+
+            // set the dimensions and margins of the graph
+            var margin = {top: 20, right: 20, bottom: 30, left: 50},
+                width = 960 - margin.left - margin.right,
+                height = 700 - margin.top - margin.bottom;
+                radius = (Math.min(width, height) / 2) - 10;
+
+            var formatNumber = d3.format(",d");
+
+            var x = d3.scaleLinear()
+                .range([0, 2 * Math.PI]);
+
+            var y = d3.scaleSqrt()
+                .range([0, radius]);
+
+            var color = d3.scaleOrdinal(d3.schemeCategory20c);
+
+            var partition = d3.partition();
+
+            var arc = d3.arc()
+                .startAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x0))); })
+                .endAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x1))); })
+                .innerRadius(function(d) { return Math.max(0, y(d.y0)); })
+                .outerRadius(function(d) { return Math.max(0, y(d.y1)); });
+
+            //Create the svg drawing area in the appropriate div
+            //TODO: dynamically get id of container div
+            var divId = "TODOAddinGuid3";
+            var div = d3.select("#" + divId).append("div")
+                .attr("class", "tooltip")
+                .style("opacity", 0);
+            var sunburst = d3.select("#" + divId).append("svg")
+	            .attr("width", "100%")
+	            .attr("viewBox", "0 0 " + (width + margin.left + margin.right) + " " + (height + margin.top + margin.bottom))
+	            .attr("preserveAspectRatio", "xMinYMin meet")
+              .append("g")
+                .attr("transform", "translate(" + width / 2 + "," + (height / 2) + ")");
+
+            //TODO: configure data source
+            d3.json("/-/media/Project/NSD-Test/NSD-Test-Site/flare.json?la=en&hash=8FE6E16677F2BF8B769372E0B65F49B2A10EB2EC", function (error, root) {
+              if (error) throw error;
+
+              root = d3.hierarchy(root);
+              //TODO: configure name of numerical value field
+              root.sum(function(d) { return d.size; });
+              sunburst.selectAll("path")
+                  .data(partition(root).descendants())
+                .enter().append("path")
+                  .attr("d", arc)
+                  .style("fill", function(d) { return color((d.children ? d : d.parent).data.name); })
+                  .on("click", click)
+                 .on("mouseover", function(d) {
+                   div.transition()
+                     .duration(200)
+                     .style("opacity", .9);
+                   div.html(d.data.name + "<br/>" + formatNumber(d.value))
+                     .style("left", (d3.event.pageX) + "px")
+                     .style("top", (d3.event.pageY - 28) + "px");
+                   })
+                 .on("mouseout", function(d) {
+                   div.transition()
+                     .duration(500)
+                     .style("opacity", 0);
+                   });
+            });
+
+            function click(d) {
+              sunburst.transition()
+                  .duration(750)
+                  .tween("scale", function() {
+                    var xd = d3.interpolate(x.domain(), [d.x0, d.x1]),
+                        yd = d3.interpolate(y.domain(), [d.y0, 1]),
+                        yr = d3.interpolate(y.range(), [d.y0 ? 20 : 0, radius]);
+                    return function(t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); };
+                  })
+                .selectAll("path")
+                  .attrTween("d", function(d) { return function() { return arc(d); }; });
+            }
+
+            d3.select(self.frameElement).style("height", height + "px");
+
+        </script>
+    </div>
+</body>
+</html>
