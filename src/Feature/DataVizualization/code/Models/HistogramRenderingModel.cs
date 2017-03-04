@@ -21,11 +21,11 @@ namespace AdminB2017.Feature.DataVisualization.Models
     /// </summary>
     public string Id { get { return _id; } }
     
-    public DateTime FromDate { get { return  new DateTime(2016,2,1);} }
+    public DateTime FromDate { get; set; }
 
-    public DateTime ToDate { get { return new DateTime(2016,4,1);} }
+        public DateTime ToDate { get; set; }
 
-    public TimePeriods TimePeriod { get; set; }
+        public TimePeriods TimePeriod { get; set; }
 
     public Uri DataUrl { get; set; }
 

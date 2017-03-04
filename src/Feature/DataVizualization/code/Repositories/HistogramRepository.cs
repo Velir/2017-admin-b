@@ -24,8 +24,12 @@ namespace AdminB2017.Feature.DataVisualization.Repositories
       model.DataUrl = new Uri(field.Url);
       model.ShowLabels =  !(string.IsNullOrWhiteSpace(this.Rendering.Parameters[Constants.ShowLabels]) ||
       this.Rendering.Parameters[Constants.ShowLabels] == "0"); //TODO Clean up
-       
-      model.DateColumnName = model.DataSourceItem.Fields[Templates.Histogram.Fields.DataColumnName].Value;
+      DateField fromDate = model.DataSourceItem.Fields[Templates.Histogram.Fields.FromDate];
+      model.FromDate = fromDate.DateTime;
+            DateField toDate = model.DataSourceItem.Fields[Templates.Histogram.Fields.ToDate];
+            model.ToDate = toDate.DateTime;
+
+            model.DateColumnName = model.DataSourceItem.Fields[Templates.Histogram.Fields.DataColumnName].Value;
       return model;
     }
   }
