@@ -102,18 +102,18 @@ You can customize DatVizPak in several different ways.
 
 ## Known Issues
 
-DatVizPak Mark I has several known issues. The notable issues are listed below; you can find the full list at [/issues](/issues "issues"): 
+DatVizPak Mark I has several known issues. The notable issues are listed below; you can find the full list at [/issues](https://github.com/Velir/admin-b/issues "issues"): 
 
-* First visualization added to a page does not show at first or set page as "dirty": [#30](/issues/30 "#30") and [#28](/issues/28 "#28")
-* Only one instance of each type of visualization can be added to a page: [#29](/issues/29 "#29")
+* First visualization added to a page does not show at first or set page as "dirty": [#30](https://github.com/Velir/admin-b/issues/30 "#30") and [#28](https://github.com/Velir/admin-b/issues/28 "#28")
+* Only one instance of each type of visualization can be added to a page: [#29](https://github.com/Velir/admin-b/issues/29 "#29")
 
 These notable issues will be resolved in DatVizPak Mark II.
 
 ## Roadmap
 
 1. DatVizPak Mark II:
- 1. Resolve issues [#28](/issues/28 "#28"), [#29](/issues/29 "#29"), and [#30](/issues/30 "#30").  
- 2. Update visualizations to act more in line with "Wireframe" theme ([#24](/issues/24 "#24")).
+ 1. Resolve issues [#28](https://github.com/Velir/admin-b/issues/28 "#28"), [#29](https://github.com/Velir/admin-b/issues/29 "#29"), and [#30](https://github.com/Velir/admin-b/issues/30 "#30").  
+ 2. Update visualizations to act more in line with "Wireframe" theme ([#24](https://github.com/Velir/admin-b/issues/24 "#24")).
 
 ## Developer Bootstrap
 
