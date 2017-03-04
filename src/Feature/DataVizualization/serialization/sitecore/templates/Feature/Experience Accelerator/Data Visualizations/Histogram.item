@@ -21,13 +21,13 @@ content-length: 38
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
-content-length: 38
+content-length: 40
 
-Applications/32x32/text_align_left.png
+Office/32x32/object_alignment_bottom.png
 ----version----
 language: en
 version: 1
-revision: a85fd7bf-d669-479c-945f-76b532f307c4
+revision: 3a623eea-f8b4-4bcf-84e1-299a5276cf17
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -49,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a85fd7bf-d669-479c-945f-76b532f307c4
+3a623eea-f8b4-4bcf-84e1-299a5276cf17
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20170304T044948Z
+20170304T071240Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

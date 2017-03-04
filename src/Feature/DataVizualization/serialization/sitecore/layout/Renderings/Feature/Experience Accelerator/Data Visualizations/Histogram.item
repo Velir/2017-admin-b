@@ -6,33 +6,26 @@ path: /sitecore/layout/Renderings/Feature/Experience Accelerator/Data Visualizat
 parent: {5374CBD8-E2B0-4DB4-A161-E2F681E48E1E}
 name: Histogram
 master: {00000000-0000-0000-0000-000000000000}
-template: {2A3E91A0-7987-44B5-AB34-35C2D9DE83B9}
-templatekey: Controller rendering
+template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
+templatekey: View rendering
 created: 20170304T050553Z
 
 ----field----
-field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
-name: Controller
-key: controller
-content-length: 9
+field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
+name: Path
+key: path
+content-length: 41
 
-Histogram
+/Views/DataVisualization/Histogram.cshtml
 ----field----
-field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
-name: Controller Action
-key: controller action
-content-length: 5
-
-Index
-----field----
-field: {13F89250-AD6B-4548-882E-118A12C18094}
+field: {7D24E54F-5C16-4314-90C9-6051AA1A7DA1}
 name: Parameters Template
 key: parameters template
 content-length: 38
 
 {05BDDF01-A0B8-4209-ACCA-6FE01C64F09D}
 ----field----
-field: {94069F66-609C-48B0-8281-521C30FB269D}
+field: {EF7C5528-7307-4E19-863B-DA19EED6A9ED}
 name: Open Properties after Add
 key: open properties after add
 content-length: 1
@@ -76,7 +69,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: aff7a299-f83f-47cb-bbf9-84e16f75a393
+revision: 028e8c93-b44d-4998-92c8-bafa1dfbabe2
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -91,14 +84,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-aff7a299-f83f-47cb-bbf9-84e16f75a393
+028e8c93-b44d-4998-92c8-bafa1dfbabe2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20170304T051016Z
+20170304T071049Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
