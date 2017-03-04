@@ -1,101 +1,76 @@
-﻿
-@{
-    Layout = null;
-}
+﻿<div id="TODOAddinGuid">
+  <script src="http://d3js.org/d3.v4.min.js"></script>
+  <script>
+    var parseDate = d3.timeParse("%m/%d/%Y %H:%M:%S %p"),
+        formatCount = d3.format(",.0f");
 
-<!DOCTYPE html>
+    var margin = { top: 10, right: 30, bottom: 30, left: 30 },
+        width = 960 - margin.left - margin.right,
+        height = 500 - margin.top - margin.bottom;
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Histogram</title>
-    <style>
-        .bar rect {
-            fill: steelblue;
-        }
+    //TODO: configure data range
+    var x = d3.scaleTime()
+        .domain([new Date(2016, 0, 1), new Date(2017, 5, 1)])
+        .rangeRound([0, width]);
 
-        .bar text {
-            fill: #000;
-            font: 10px sans-serif;
-        }
-    </style>
-</head>
-<body>
-    <div id="TODOAddinGuid"> 
-        <script src="http://d3js.org/d3.v4.min.js"></script>
-        <script>
-            var parseDate = d3.timeParse("%m/%d/%Y %H:%M:%S %p"),
-                formatCount = d3.format(",.0f");
+    var y = d3.scaleLinear()
+        .range([height, 0]);
 
-            var margin = {top: 10, right: 30, bottom: 30, left: 30},
-                width = 960 - margin.left - margin.right,
-                height = 500 - margin.top - margin.bottom;
+    var histogram = d3.histogram()
+        .value(function (d) { return d.date; })
+        .domain(x.domain())
+        .thresholds(x.ticks(d3.timeWeek));
+    //TODO: Configure data grouping - day, week, month
 
-            //TODO: configure data range
-            var x = d3.scaleTime()
-                .domain([new Date(2016, 0, 1), new Date(2017, 5, 1)])
-                .rangeRound([0, width]);
+    //Create the svg drawing area in the appropriate div
+    //TODO: dynamically get id of container div
+    var divId = "TODOAddinGuid";
+    var svg = d3.select("#" + divId).append("svg")
+      .attr("width", "100%")
+      .attr("viewBox", "0 0 " + (width + margin.left + margin.right) + " " + (height + margin.top + margin.bottom))
+      .attr("preserveAspectRatio", "xMinYMin meet")
+      .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-            var y = d3.scaleLinear()
-                .range([height, 0]);
+    svg.append("g")
+        .attr("class", "axis axis--x")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x));
 
-            var histogram = d3.histogram()
-                .value(function(d) { return d.date; })
-                .domain(x.domain())
-                .thresholds(x.ticks(d3.timeWeek));
-	            //TODO: Configure data grouping - day, week, month
+    //TODO: Configure data source
+    //read from data source
+    d3.csv("https://data.cityofnewyork.us/api/views/3q43-55fe/rows.csv", type, function (error, data) {
+      if (error) throw error;
 
-            //Create the svg drawing area in the appropriate div
-            //TODO: dynamically get id of container div
-            var divId = "TODOAddinGuid";
-            var svg = d3.select("#" + divId).append("svg")
-	            .attr("width", "100%")
-	            .attr("viewBox", "0 0 " + (width + margin.left + margin.right) + " " + (height + margin.top + margin.bottom))
-	            .attr("preserveAspectRatio", "xMinYMin meet")
-              .append("g")
-                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+      var bins = histogram(data);
 
-            svg.append("g")
-                .attr("class", "axis axis--x")
-                .attr("transform", "translate(0," + height + ")")
-                .call(d3.axisBottom(x));
+      y.domain([0, d3.max(bins, function (d) { return d.length; })]);
 
-            //TODO: Configure data source
-            //read from data source
-            d3.csv("https://data.cityofnewyork.us/api/views/3q43-55fe/rows.csv", type, function(error, data) {
-              if (error) throw error;
+      var bar = svg.selectAll(".bar")
+          .data(bins)
+          .enter().append("g")
+          .attr("class", "bar")
+          .attr("transform", function (d) { return "translate(" + x(d.x0) + "," + y(d.length) + ")"; });
 
-              var bins = histogram(data);
+      bar.append("rect")
+          .attr("x", 1)
+          .attr("width", function (d) { return x(d.x1) - x(d.x0) - 1; })
+          .attr("height", function (d) { return height - y(d.length); });
 
-              y.domain([0, d3.max(bins, function(d) { return d.length; })]);
+      //TODO: configure to show or hide labels
+      bar.append("text")
+          .attr("dy", ".75em")
+          .attr("y", 6)
+          .attr("x", function (d) { return (x(d.x1) - x(d.x0)) / 2; })
+          .attr("text-anchor", "middle")
+          .text(function (d) { return formatCount(d.length); });
+    });
 
-              var bar = svg.selectAll(".bar")
-                  .data(bins)
-                  .enter().append("g")
-                  .attr("class", "bar")
-                  .attr("transform", function(d) { return "translate(" + x(d.x0) + "," + y(d.length) + ")"; });
+    //TODO: configure name of date column
+    function type(d) {
+      d.date = parseDate(d['Created Date']);
+      return d;
+    }
 
-              bar.append("rect")
-                  .attr("x", 1)
-                  .attr("width", function(d) { return x(d.x1) - x(d.x0) - 1; })
-                  .attr("height", function(d) { return height - y(d.length); });
-
-              //TODO: configure to show or hide labels
-              bar.append("text")
-                  .attr("dy", ".75em")
-                  .attr("y", 6)
-                  .attr("x", function(d) { return (x(d.x1) - x(d.x0)) / 2; })
-                  .attr("text-anchor", "middle")
-                  .text(function(d) { return formatCount(d.length); });
-            });
-
-            //TODO: configure name of date column
-            function type(d) {
-              d.date = parseDate(d['Created Date']);
-              return d;
-            }
-
-        </script>
-    </div>
-</body>
-</html>
+  </script>
+</div>
