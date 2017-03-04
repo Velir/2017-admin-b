@@ -108,6 +108,11 @@ These notable issues will be resolved in DatVizPak Mark II.
 1. DatVizPak Mark II:
  1. Resolve issues [#28](https://github.com/Velir/admin-b/issues/28 "#28"), [#29](https://github.com/Velir/admin-b/issues/29 "#29"), and [#30](https://github.com/Velir/admin-b/issues/30 "#30").  
  2. Update visualizations to act more in line with "Wireframe" theme ([#24](https://github.com/Velir/admin-b/issues/24 "#24")).
+3. DatVizPak Mark III:
+	1. Add additional style color options ([#21](https://github.com/Velir/admin-b/issues/21 "#21")).
+	1. Add the ability to select rolling time frames for histograms and scatter plots ([#27](https://github.com/Velir/admin-b/issues/27 "#27")).
+2. DatVizPak Mark IV:
+	1. Add new visualization types: line chart ([#31](https://github.com/Velir/admin-b/issues/31 "#31")) and pie chart ([#32](https://github.com/Velir/admin-b/issues/32 "#32"))
 
 ## Developer Bootstrap
 
