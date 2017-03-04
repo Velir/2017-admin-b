@@ -48,6 +48,14 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.Kernel.NoReferences.8.2.161221\lib\NET452\Sitecore.Kernel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Mvc, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.Mvc.NoReferences.8.2.161221\lib\NET452\Sitecore.Mvc.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -89,6 +97,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Views\Test.cshtml" />
+    <None Include="Properties\PublishProfiles\local.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
