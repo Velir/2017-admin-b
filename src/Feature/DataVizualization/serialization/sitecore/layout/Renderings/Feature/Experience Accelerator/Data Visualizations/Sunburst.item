@@ -30,7 +30,7 @@ name: Parameters Template
 key: parameters template
 content-length: 38
 
-{20DAB03D-D1BA-4194-ABB0-23670347A730}
+{2F235D7D-FC0F-4ADF-B728-33D332D8DEF4}
 ----field----
 field: {94069F66-609C-48B0-8281-521C30FB269D}
 name: Open Properties after Add
@@ -49,9 +49,9 @@ query:$site/*[@@name='Data']/*[@@templatename='Data Visualizations Folder']
 field: {1A7C85E5-DC0B-490D-9187-BB1DBCB4C72F}
 name: Datasource Template
 key: datasource template
-content-length: 83
+content-length: 79
 
-/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Scatter Plot
+/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Sunburst
 ----field----
 field: {A2F5D9DF-8CBA-4A1D-99EB-51ACB94CB057}
 name: Page Editor Buttons
@@ -76,7 +76,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 70c995ae-6937-4b89-af01-22ebea6a8883
+revision: 56a2fd93-1f15-4c7d-a4a6-fce7dc7238f7
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -91,14 +91,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-70c995ae-6937-4b89-af01-22ebea6a8883
+56a2fd93-1f15-4c7d-a4a6-fce7dc7238f7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20170304T210553Z
+20170304T222041Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
