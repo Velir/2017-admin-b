@@ -28,7 +28,13 @@ DatVizPak comes with several data visualizations out of the box.
 
 Histograms are graphical representations of the frequency of data events, usually over a range of time (read more at [Wikipedia](https://en.wikipedia.org/wiki/Histogram "Wikipedia")). 
 
-### [Other Visualizations]
+### Scatter Plot 
+
+Scatter plots are plots of data points on a Cartesian graph (read more at [Wikipedia](https://en.wikipedia.org/wiki/Scatter_plot "Wikipedia")).
+
+### Sunburst
+
+Sunbursts are a form of pie chart that use multilevel concentric circles to represent hierarchical data (read more at [Wikipedia](https://en.wikipedia.org/wiki/Pie_chart#Ring_chart_.2F_Sunburst_chart_.2F_Multilevel_pie_chart "Wikipedia")). The sunburst visualization provided in DatVizPak are interactive, allowing for zooming in and out to examine data more closely. 
 
 ## Inserting Data Visualizations
 
