@@ -32,6 +32,17 @@ namespace AdminB2017.Feature.DataVisualization
       }
     }
 
+    public struct Sunburst
+    {
+      public static readonly ID ID = new ID("{550F06C1-039C-4E4B-A59D-B9E34FB4EE8A}");
+
+      public struct Fields
+      { 
+        public static readonly ID ValueFieldName = new ID("{69306041-8898-4774-9322-5E98F4113068}");
+
+      }
+    }
+
     public struct Histogram
     {
       public static readonly ID ID = new ID("{96468976-43DC-4594-83DD-4AA7CF7020C2}");

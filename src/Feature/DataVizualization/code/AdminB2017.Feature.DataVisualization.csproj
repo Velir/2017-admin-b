@@ -194,16 +194,20 @@
     <Compile Include="Constants.cs" />
     <Compile Include="Controllers\HistogramController.cs" />
     <Compile Include="Controllers\ScatterPlotController.cs" />
+    <Compile Include="Controllers\SunburstController.cs" />
     <Compile Include="Models\DataVisualizationRenderingModelBase.cs" />
     <Compile Include="Models\HistogramRenderingModel.cs" />
     <Compile Include="Models\ScatterPlotRenderingModel.cs" />
+    <Compile Include="Models\SunburstRenderingModel.cs" />
     <Compile Include="Models\TimePeriods.cs" />
     <Compile Include="Pipelines\IoC\RegisterDataVisualizationServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\HistogramRepository.cs" />
+    <Compile Include="Repositories\ISunburstRepository.cs" />
     <Compile Include="Repositories\ScatterPlotRepository.cs" />
     <Compile Include="Repositories\IScatterPlotRepository.cs" />
     <Compile Include="Repositories\IHistogramRepository.cs" />
+    <Compile Include="Repositories\SunburstRepository.cs" />
     <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>

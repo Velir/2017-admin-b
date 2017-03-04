@@ -14,6 +14,7 @@ namespace AdminB2017.Feature.DataVisualization.Pipelines.IoC
     {
       ServiceCollectionServiceExtensions.AddTransient<IHistogramRepository, HistogramRepository>(args.ServiceCollection);
       ServiceCollectionServiceExtensions.AddTransient<IScatterPlotRepository, ScatterPlotRepository>(args.ServiceCollection);
+      ServiceCollectionServiceExtensions.AddTransient<ISunburstRepository, SunburstRepository>(args.ServiceCollection);
     }
   }
 }
