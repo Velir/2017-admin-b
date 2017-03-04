@@ -98,7 +98,7 @@ DataVizPak allows for content editors to configure visualizations to pull from d
 
 ## Known Issues
 
-DataVizPak Mark I has several known issues. The notable issues are listed below; you can find the full list at [/issues](https://github.com/Velir/admin-b/issues "issues"): 
+DataVizPak 1.0 has several known issues. The notable issues are listed below; you can find the full list at [/issues](https://github.com/Velir/admin-b/issues "issues"): 
 
 * First visualization added to a page does not show at first or set page as "dirty": [#30](https://github.com/Velir/admin-b/issues/30 "#30") and [#28](https://github.com/Velir/admin-b/issues/28 "#28")
 * Only one instance of each type of visualization can be added to a page: [#29](https://github.com/Velir/admin-b/issues/29 "#29")
@@ -107,14 +107,16 @@ These notable issues will be resolved in DataVizPak Mark II.
 
 ## Roadmap
 
-1. DataVizPak Mark II:
+1. DataVizPak 1.1:
  1. Resolve issues [#28](https://github.com/Velir/admin-b/issues/28 "#28"), [#29](https://github.com/Velir/admin-b/issues/29 "#29"), and [#30](https://github.com/Velir/admin-b/issues/30 "#30").  
  2. Update visualizations to act more in line with "Wireframe" theme ([#24](https://github.com/Velir/admin-b/issues/24 "#24")).
-3. DataVizPak Mark III:
+3. DataVizPak 1.2:
 	1. Add additional style color options ([#21](https://github.com/Velir/admin-b/issues/21 "#21")).
 	1. Add the ability to select rolling time frames for histograms and scatter plots ([#27](https://github.com/Velir/admin-b/issues/27 "#27")).
-2. DataVizPak Mark IV:
+2. DataVizPak 1.3:
 	1. Add new visualization types: line chart ([#31](https://github.com/Velir/admin-b/issues/31 "#31")) and pie chart ([#32](https://github.com/Velir/admin-b/issues/32 "#32"))
+2. DataVizPak 2.0:
+	1. Integrate interactive visualizations with xDB ([#35](https://github.com/Velir/admin-b/issues/35 "#35"))
 
 ## Developer Bootstrap
 
