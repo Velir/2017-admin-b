@@ -27,8 +27,6 @@
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>.\bin\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <SitecoreDeployFolder>d:\websites\hack2017\website</SitecoreDeployFolder>
-    <SitecoreWebUrl>http://hack2017</SitecoreWebUrl>
     <SitecoreAccessGuid>e3289e05-25cf-4296-a588-13b46ccb9260</SitecoreAccessGuid>
     <InstallSitecoreConnector>True</InstallSitecoreConnector>
     <DisableFileDeployment>False</DisableFileDeployment>
