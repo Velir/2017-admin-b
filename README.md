@@ -2,6 +2,15 @@
 
 The Data Visualization Package (DatVizPak) for Sitecore Experience Accelerator (SXA) incorporates powerful data-driven visualizations into the standard SXA toolbox. SXA offers a wide range of components for content authors to speed up production of websites. DatVizPak extends the available components with powerful data visualizations that content editors can use to add a new dimension of content to their websites.
 
+## Prerequisites
+
+Before you can install DatVizPak, you need to install the following items:
+
+* Sitecore 8.2 Update 2 (rev 161221) ([https://dev.sitecore.net/Downloads/Sitecore_Experience_Platform/82/Sitecore_Experience_Platform_82_Update2.aspx](https://dev.sitecore.net/Downloads/Sitecore_Experience_Platform/82/Sitecore_Experience_Platform_82_Update2.aspx))
+* Sitecore Powershell Extensions 4.3 ([https://marketplace.sitecore.net/Modules/S/Sitecore_PowerShell_console.aspx](https://marketplace.sitecore.net/Modules/S/Sitecore_PowerShell_console.aspx)) 
+ * N.B. Version 4.4 of Sitecore Powershell Extensions will cause errors.
+* Sitecore Experience Accelerator 1.2 ([https://dev.sitecore.net/Downloads/Sitecore_Experience_Accelerator/12/Sitecore_Experience_Accelerator_12_Initial_Release.aspx](https://dev.sitecore.net/Downloads/Sitecore_Experience_Accelerator/12/Sitecore_Experience_Accelerator_12_Initial_Release.aspx))
+
 ## Sitecore Package
 
 1. Install Sitecore package: DatVizPak-1.0.0.0.zip.
