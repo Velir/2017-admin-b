@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configurat
 		nuget.config = nuget.config
 		publishsettings.targets = publishsettings.targets
 		README.md = README.md
+		serializationsettings.targets = serializationsettings.targets
+		TdsGlobal.config = TdsGlobal.config
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{C79C9D7A-C338-4960-8F3F-57BE5A8DFCA6}"
@@ -26,6 +28,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataVisualization", "DataVi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminB2017.Feature.DataVisualization", "src\Feature\DataVizualization\code\AdminB2017.Feature.DataVisualization.csproj", "{C85B7450-02FC-43CE-A6F9-0989876A92EA}"
 EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "AdminB2017.Feature.DataVisualization.Master", "src\Feature\DataVizualization\serialization\AdminB2017.Feature.DataVisualization.Master.scproj", "{F640820A-E51F-4E9B-BE0B-C8A3D6570E82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +44,12 @@ Global
 		{C85B7450-02FC-43CE-A6F9-0989876A92EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C85B7450-02FC-43CE-A6F9-0989876A92EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C85B7450-02FC-43CE-A6F9-0989876A92EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F640820A-E51F-4E9B-BE0B-C8A3D6570E82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F640820A-E51F-4E9B-BE0B-C8A3D6570E82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F640820A-E51F-4E9B-BE0B-C8A3D6570E82}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F640820A-E51F-4E9B-BE0B-C8A3D6570E82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F640820A-E51F-4E9B-BE0B-C8A3D6570E82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F640820A-E51F-4E9B-BE0B-C8A3D6570E82}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,5 +59,6 @@ Global
 		{35AB5B67-1774-4FEA-A05C-28E996F21C41} = {D345910E-FF18-487D-AA6F-F9FEEF8C36C0}
 		{14C6C433-C2EC-4940-A7C1-BFC6CAEB3C99} = {C79C9D7A-C338-4960-8F3F-57BE5A8DFCA6}
 		{C85B7450-02FC-43CE-A6F9-0989876A92EA} = {14C6C433-C2EC-4940-A7C1-BFC6CAEB3C99}
+		{F640820A-E51F-4E9B-BE0B-C8A3D6570E82} = {14C6C433-C2EC-4940-A7C1-BFC6CAEB3C99}
 	EndGlobalSection
 EndGlobal
