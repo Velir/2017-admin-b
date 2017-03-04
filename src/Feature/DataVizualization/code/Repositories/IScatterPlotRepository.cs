@@ -6,7 +6,7 @@ using Sitecore.XA.Foundation.Mvc.Repositories.Base;
 
 namespace AdminB2017.Feature.DataVisualization.Repositories
 {
-  public interface IHistogramRepository : IModelRepository, IAbstractRepository<IRenderingModelBase>
+  public interface IScatterPlotRepository : IModelRepository, IAbstractRepository<IRenderingModelBase>
   {
     
   }
