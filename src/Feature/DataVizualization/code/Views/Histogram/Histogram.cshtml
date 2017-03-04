@@ -15,7 +15,6 @@
         width = 960 - margin.left - margin.right,
         height = 500 - margin.top - margin.bottom;
 
-    //TODO: configure data range
     var x = d3.scaleTime()
         .domain([new Date("@Model.FromDate.ToString("O")"), new Date("@Model.ToDate.ToString("O")")])
         .rangeRound([0, width]);
@@ -28,15 +27,15 @@
       .domain(x.domain())
 
     @{
-      switch (Model.Period)
+      switch (Model.TimePeriod)
       {
-          case Period.Day:
+          case TimePeriods.Day:
            <text>.thresholds(x.ticks(d3.timeDay));</text>
            break;
-          case Period.Month:
+          case TimePeriods.Month:
            <text>.thresholds(x.ticks(d3.timeMonth));</text>
            break;
-          case Period.Week:
+          case TimePeriods.Week:
             <text>.thresholds(x.ticks(d3.timeWeek));</text>
            break;
       }
@@ -59,7 +58,6 @@
         .attr("transform", "translate(0," + height + ")")
         .call(d3.axisBottom(x));
 
-    //TODO: Configure data source
     //read from data source
     d3.csv("@Model.DataUrl", type, function (error, data) {
       if (error) throw error;
@@ -79,18 +77,23 @@
           .attr("width", function (d) { return x(d.x1) - x(d.x0) - 1; })
           .attr("height", function (d) { return height - y(d.length); });
 
-      //TODO: configure to show or hide labels
+
+      @if (Model.ShowLabels)
+      {
+        <text>
       bar.append("text")
           .attr("dy", ".75em")
           .attr("y", 6)
           .attr("x", function (d) { return (x(d.x1) - x(d.x0)) / 2; })
           .attr("text-anchor", "middle")
           .text(function (d) { return formatCount(d.length); });
+      </text>
+      }
+      
     });
 
-    //TODO: configure name of date column
     function type(d) {
-      d.date = parseDate(d['Created Date']);
+      d.date = parseDate(d["@Model.DateColumnName"]);
       return d;
     }
 

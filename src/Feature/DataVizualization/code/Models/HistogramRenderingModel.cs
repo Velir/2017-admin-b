@@ -25,14 +25,14 @@ namespace AdminB2017.Feature.DataVisualization.Models
 
     public DateTime ToDate { get { return new DateTime(2016,4,1);} }
 
-    public Period Period { get; set; }
+    public TimePeriods TimePeriod { get; set; }
 
-    public HtmlString DataUrl { get; set; }
+    public Uri DataUrl { get; set; }
+
+    public bool ShowLabels { get; set; }
+
+    public string DateColumnName { get; set; }
   }
 
   //TODO Move to appropriate location
-  public enum Period
-  {
-    Day, Week, Month
-  }
 }
