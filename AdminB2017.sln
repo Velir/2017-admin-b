@@ -18,7 +18,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{0CE5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{D345910E-FF18-487D-AA6F-F9FEEF8C36C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website", "src\Project\Website\code\Website.csproj", "{35AB5B67-1774-4FEA-A05C-28E996F21C41}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminB2017.Project.Website", "src\Project\Website\code\AdminB2017.Project.Website.csproj", "{35AB5B67-1774-4FEA-A05C-28E996F21C41}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataVisualization", "DataVisualization", "{14C6C433-C2EC-4940-A7C1-BFC6CAEB3C99}"
 EndProject
