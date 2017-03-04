@@ -36,11 +36,20 @@ Scatter plots are plots of data points on a Cartesian graph (read more at [Wikip
 
 Sunbursts are a form of pie chart that use multilevel concentric circles to represent hierarchical data (read more at [Wikipedia](https://en.wikipedia.org/wiki/Pie_chart#Ring_chart_.2F_Sunburst_chart_.2F_Multilevel_pie_chart "Wikipedia")). The sunburst visualization provided in DatVizPak are interactive, allowing for zooming in and out to examine data more closely. 
 
-## Inserting Data Visualizations
+## Using DatVizPak
+
+When creating a new site, make sure the "Data Visualizations" feature is enabled:
+![New SXA Site - Features](https://i.imgur.com/22YtGiz.png)
+
+_N.B. If you would like to add data visualizations from DatVizPack to an existing SXA site, you need to manually update the site items in Sitecore to add the features._
 
 DatVizPak updates the SXA toolbox with all of the new visualizations:
 
 ![Toolbox](https://i.imgur.com/NPBr2CV.png)
+
+Select the datasource (or create a new one) and click "OK".
+
+![Datasource](https://i.imgur.com/uOiDySP.png)
 
 After inserting a data visualization component, component properties will pop up. Configure the properties for the data visualization and click "OK". 
 
@@ -67,4 +76,4 @@ Want to develop for DatVizPak? Great! To get started developing for DatVizPak, y
 
 ## About the Authors
 
-DatVizPak was created by the [Velir](https://www.velir.com "Velir") team admin/b (Dan Solovay, Nicole Durand, Ed Schwehm) as part of [2017 Sitecore Hackathon](http://www.sitecorehackathon.org/sitecore-hackathon-2017/ "Sitecore Hackathon 2017").
+DatVizPak was created by the [Velir](https://www.velir.com "Velir") [team admin/b](/wiki/Team-admin-b "admin/b") (Dan Solovay, Nicole Durand, Ed Schwehm) as part of [2017 Sitecore Hackathon](http://www.sitecorehackathon.org/sitecore-hackathon-2017/ "Sitecore Hackathon 2017").
