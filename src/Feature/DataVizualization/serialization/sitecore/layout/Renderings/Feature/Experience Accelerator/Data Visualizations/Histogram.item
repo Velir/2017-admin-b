@@ -30,7 +30,7 @@ name: Parameters Template
 key: parameters template
 content-length: 38
 
-{05BDDF01-A0B8-4209-ACCA-6FE01C64F09D}
+{8B8DFAD1-0E15-4E50-A06A-7927A6F38CF0}
 ----field----
 field: {94069F66-609C-48B0-8281-521C30FB269D}
 name: Open Properties after Add
@@ -42,16 +42,16 @@ content-length: 1
 field: {B5B27AF1-25EF-405C-87CE-369B3A004016}
 name: Datasource Location
 key: datasource location
-content-length: 60
+content-length: 75
 
-query:$site/*[@@name='Data']/*[@@templatename='Maps Folder']
+query:$site/*[@@name='Data']/*[@@templatename='Data Visualizations Folder']
 ----field----
 field: {1A7C85E5-DC0B-490D-9187-BB1DBCB4C72F}
 name: Datasource Template
 key: datasource template
-content-length: 59
+content-length: 80
 
-/sitecore/templates/Feature/Experience Accelerator/Maps/Map
+/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Histogram
 ----field----
 field: {A2F5D9DF-8CBA-4A1D-99EB-51ACB94CB057}
 name: Page Editor Buttons
@@ -76,7 +76,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 903e6fb6-2db5-4bd0-a922-e138d64cab07
+revision: 2fedb4cd-ddba-4bc0-a3fe-584713f2656e
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -91,14 +91,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-903e6fb6-2db5-4bd0-a922-e138d64cab07
+2fedb4cd-ddba-4bc0-a3fe-584713f2656e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20170304T080415Z
+20170304T140851Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
