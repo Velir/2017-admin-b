@@ -8,10 +8,10 @@ Before you can install DatVizPak, you need to install the following items:
 
 * Sitecore 8.2 Update 2 (rev 161221) ([https://dev.sitecore.net/Downloads/Sitecore_Experience_Platform/82/Sitecore_Experience_Platform_82_Update2.aspx](https://dev.sitecore.net/Downloads/Sitecore_Experience_Platform/82/Sitecore_Experience_Platform_82_Update2.aspx))
 * Sitecore Powershell Extensions 4.3 ([https://marketplace.sitecore.net/Modules/S/Sitecore_PowerShell_console.aspx](https://marketplace.sitecore.net/Modules/S/Sitecore_PowerShell_console.aspx)) 
- * N.B. Version 4.4 of Sitecore Powershell Extensions will cause errors.
+ * *N.B. Version 4.4 of Sitecore Powershell Extensions will cause errors.*
 * Sitecore Experience Accelerator 1.2 ([https://dev.sitecore.net/Downloads/Sitecore_Experience_Accelerator/12/Sitecore_Experience_Accelerator_12_Initial_Release.aspx](https://dev.sitecore.net/Downloads/Sitecore_Experience_Accelerator/12/Sitecore_Experience_Accelerator_12_Initial_Release.aspx))
 
-## Sitecore Package
+## Installation
 
 1. Install Sitecore package: DatVizPak-1.0.0.0.zip.
 2. Publish with subitems the following paths:
@@ -38,7 +38,7 @@ DatVizPak updates the SXA toolbox with all of the new visualizations:
 
 After inserting a data visualization component, component properties will pop up. Configure the properties for the data visualization and click "OK". 
 
-N.B. In Experience Editor, the data visualization component will show only a static image representing the type of data visualization. View the page in Preview Mode to see the actual visualization.
+*N.B. In Experience Editor, the data visualization component will show only a static image representing the type of data visualization. View the page in Preview Mode to see the actual visualization.*
 
 ## Warning About External Data Sources
 
