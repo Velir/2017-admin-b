@@ -126,4 +126,4 @@ Want to develop for DatVizPak? Great! To get started developing for DatVizPak, y
 
 ## About the Authors
 
-DatVizPak was created by the [Velir](https://www.velir.com "Velir") [team admin/b](/wiki/Team-admin-b "admin/b") (Dan Solovay, Nicole Durand, Ed Schwehm) as part of [2017 Sitecore Hackathon](http://www.sitecorehackathon.org/sitecore-hackathon-2017/ "Sitecore Hackathon 2017").
+DatVizPak was created by the [Velir](https://www.velir.com "Velir") [team admin/b](https://github.com/Velir/admin-b/wiki/Team-admin-b "admin/b") (Dan Solovay, Nicole Durand, Ed Schwehm) as part of [2017 Sitecore Hackathon](http://www.sitecorehackathon.org/sitecore-hackathon-2017/ "Sitecore Hackathon 2017").
