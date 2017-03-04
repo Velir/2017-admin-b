@@ -11,9 +11,10 @@
 }
 else
 {
-    if (string.IsNullOrWhiteSpace(Model.DataUrl.ToString()) || string.IsNullOrWhiteSpace(Model.DateColumnName) || System.IO.Path.GetExtension(Model.DataUrl.AbsolutePath) != ".csv")
+  if (string.IsNullOrWhiteSpace(Model.DataUrl.ToString()) || string.IsNullOrWhiteSpace(Model.DateColumnName) ||  
+    System.IO.Path.GetExtension(Model.DataUrl.ToString()) != ".csv")
     {
-        @Model.MessageRequiredFieldMissing
+    @Model.MessageRequiredFieldMissing
     }
 
   <div @Html.Sxa().Component("histogram", Model.Attributes)>
