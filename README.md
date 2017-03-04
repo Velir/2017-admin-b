@@ -1,5 +1,7 @@
 # Data Visualization Package for Sitecore Experience Accelerator 
 
+![Data Visualation Package (DatVizPack)](https://i.imgur.com/XdEer90.png)
+
 The Data Visualization Package (DatVizPak) for Sitecore Experience Accelerator (SXA) incorporates powerful data-driven visualizations into the standard SXA toolbox. SXA offers a wide range of components for content authors to speed up production of websites. DatVizPak extends the available components with powerful data visualizations that content editors can use to add a new dimension of content to their websites.
 
 ## Prerequisites
