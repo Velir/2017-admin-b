@@ -6,4 +6,5 @@ The following are required:
 
 * Sitecore.XA.Foundation.MVC.dll
 * Sitecore.XA.Foundation.IOC.dll
+* Sitecore.XA.Foundation.MarkupDecorator.dll
 
