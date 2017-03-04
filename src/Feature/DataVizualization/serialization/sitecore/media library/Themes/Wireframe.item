@@ -1,0 +1,80 @@
+----item----
+version: 1
+id: {3F46272C-F3B8-4913-8C00-3816B436A4D3}
+database: master
+path: /sitecore/media library/Themes/Wireframe
+parent: {3CE9A090-FB9B-42BE-B593-F39BFCB1DE2B}
+name: Wireframe
+master: {00000000-0000-0000-0000-000000000000}
+template: {F7653F31-6F17-4DAA-9217-8E116BABC927}
+templatekey: Theme
+created: 20161216T125529Z
+
+----field----
+field: {74F8C14D-559B-40D0-BF52-4C53FA62E7AA}
+name: CompatibilityModeEdit
+key: compatibilitymodeedit
+content-length: 38
+
+{1F4D2F89-D363-4C77-A365-53BFA7307F14}
+----field----
+field: {A4BAAEBC-8AB7-4038-B6C9-BB7B7D170452}
+name: CompatibilityModePreviewPublic
+key: compatibilitymodepreviewpublic
+content-length: 38
+
+{1F4D2F89-D363-4C77-A365-53BFA7307F14}
+----field----
+field: {384C2D3C-3E34-4493-9CB2-ADE68CAF0DA2}
+name: BaseLayout
+key: baselayout
+content-length: 233
+
+{05BFBCDF-4DA5-414A-8651-A221AB3F5F0F}|{9C1D66B3-6828-4759-9EEC-D68A7A2CE248}|{C61F0ACA-FA15-43C8-9555-C5E1D53C7D14}|{DF95EF99-4AFB-4E59-A341-2CC147120344}|{06401E9B-A3C5-4EB1-A8BA-A66658E157BC}|{1FF2E882-18C3-4FF3-8B1A-736ECA929C5F}
+----version----
+language: en
+version: 1
+revision: 54de98f2-eb0c-4587-9e23-5f47703f72f8
+
+----field----
+field: {2C0322AC-351D-4165-944D-A81C49FE7889}
+name: SupportWireframeImages
+key: supportwireframeimages
+content-length: 1
+
+1
+----field----
+field: {912EAD3A-0080-46E5-B304-B1B76BB8396A}
+name: WideContent
+key: widecontent
+content-length: 1
+
+0
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20160429T112958Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+54de98f2-eb0c-4587-9e23-5f47703f72f8
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20161216T125529Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn
