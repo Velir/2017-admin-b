@@ -107,6 +107,7 @@
   <ItemGroup>
     <None Include="Properties\PublishProfiles\local.pubxml" />
     <Content Include="Views\Histogram\Histogram.cshtml" />
+    <Content Include="Views\ScatterPlotOverTime\ScatterPlotOverTime.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
