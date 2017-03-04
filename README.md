@@ -42,13 +42,22 @@ Histogram visualizations in DatVizPak have several fields required for configura
 
 Additionally, the "Show Labels" check box is available on the component properties. If checked, the histogram will include labels of the data value on each column. 
 
+#### Scatter Plot Parameters
+
+Scatter Plot visualizations in DatVizPak have several fields required for configuration. These fields are available on the datasource item. 
+
+* **Data**: A link to the actual source of data. The data must be in a comma-separated list (CSV). 
+* **DateColumnName**: The name of the column in the data that represents the date to be used for the x-axis. 
+* **Date Column Name**: The name of the column in the data that represents the value to be displayed the the y-axis.
+ * _N.B. This field is case-sensitive._
+
 ### Scatter Plot 
 
 Scatter plots are plots of data points on a Cartesian graph (read more at [Wikipedia](https://en.wikipedia.org/wiki/Scatter_plot "Wikipedia")).
 
 ### Sunburst
 
-Sunbursts are a form of pie chart that use multilevel concentric circles to represent hierarchical data (read more at [Wikipedia](https://en.wikipedia.org/wiki/Pie_chart#Ring_chart_.2F_Sunburst_chart_.2F_Multilevel_pie_chart "Wikipedia")). The sunburst visualization provided in DatVizPak are interactive, allowing for zooming in and out to examine data more closely. 
+Sunbursts are a form of pie chart that use multilevel concentric circles to represent hierarchical data (read more at [Wikipedia](https://en.wikipedia.org/wiki/Pie_chart#Ring_chart_.2F_Sunburst_chart_.2F_Multilevel_pie_chart "Wikipedia")). The sunburst visualization provided in DatVizPak is interactive, allowing for zooming in and out to examine data more closely. 
 
 ## Using DatVizPak
 
@@ -67,7 +76,11 @@ Select the datasource (or create a new one) and click "OK".
 
 After inserting a data visualization component, component properties will pop up. Configure the properties for the data visualization and click "OK". 
 
-The visualization component will be present on the page. If you created a new datasource, you'll need to update the datasource fields with the data and parameters you want.
+The visualization component will be present on the page. If you created a new datasource,  the visualization will be blank.
+
+![New Blank Histogram](https://i.imgur.com/gi2HiZj.png)
+
+You'll need to update the datasource fields with the data and parameters you want.
 
 ![Datasource Parameters](https://i.imgur.com/VIRKPxP.png)
 
