@@ -65,25 +65,25 @@
               // format the data
               data.forEach(function(d) {
                   d.date = parseTime(d.date);
-                  d.close = +d.close;
+                  //TODO: source "pointVal"
+                  d.pointVal = +d.close;
               });
                 // scale the range of the data
-                //TODO: source date and close field below
+                //TODO: source datefield below
               x.domain(d3.extent(data, function(d) { return d.date; }));
-              y.domain([0, d3.max(data, function(d) { return d.close; })]);
+              y.domain([0, d3.max(data, function (d) { return d.pointVal; })]);
               // add the dots with tooltips
               svg.selectAll("dot")
                  .data(data)
                .enter().append("circle")
                  .attr("r", 5)
                  .attr("cx", function(d) { return x(d.date); })
-                 .attr("cy", function(d) { return y(d.close); })
+                 .attr("cy", function (d) { return y(d.pointVal); })
                  .on("mouseover", function(d) {
                    div.transition()
                      .duration(200)
-                     .style("opacity", .9); //TODO: source "close" and "msg" field below
-                     //TODO: do we want to include msg?
-                   div.html(formatTime(d.date) + "<br/>" + d.close + "<br/>" + d.msg)
+                     .style("opacity", .9); 
+                     div.html(formatTime(d.date) + "<br/>" + d.pointVal)
                      .style("left", (d3.event.pageX) + "px")
                      .style("top", (d3.event.pageY - 28) + "px");
                    })
