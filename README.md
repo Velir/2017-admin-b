@@ -90,7 +90,7 @@ You'll need to update the datasource fields with the data and parameters you wan
 
 Save and close the datasource, and voilà, you have a visualization!
 
-![Histogram](https://i.imgur.com/M3E3hNZ.png)
+![Histogram](https://i.imgur.com/KuTegJN.png)
 
 ## Warning About External Data Sources
 
