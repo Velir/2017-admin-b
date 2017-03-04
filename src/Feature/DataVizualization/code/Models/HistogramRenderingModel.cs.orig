@@ -1,0 +1,40 @@
+﻿using System;
+using Sitecore.XA.Foundation.Mvc.Models;
+
+namespace AdminB2017.Feature.DataVisualization.Models
+{
+  public class HistogramRenderingModel : DataVisualizationRenderingModelBase
+  {
+<<<<<<< 724d61696e28d280acc7993dcc77eb1620559834
+    private readonly string _id;
+    public HistogramRenderingModel()
+    {
+      _id = "a" + Guid.NewGuid().ToString("N");
+    }
+
+    /// <summary>
+    /// Used to identify DIV to D3.js
+    /// </summary>
+    public string Id { get { return _id; } }
+    
+    public DateTime FromDate { get; set; }
+
+        public DateTime ToDate { get; set; }
+
+        public TimePeriods TimePeriod { get; set; }
+=======
+     
+    public DateTime FromDate { get { return  new DateTime(2016,2,1);} }
+
+    public DateTime ToDate { get { return new DateTime(2016,4,1);} }
+
+    public TimePeriods TimePeriod { get; set; }
+>>>>>>> Refactor rendering model and templates
+
+    public bool ShowLabels { get; set; }
+
+    public string DateColumnName { get; set; }
+  }
+
+ 
+}

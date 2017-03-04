@@ -20,6 +20,18 @@ namespace AdminB2017.Feature.DataVisualization
       }
     }
 
+    public struct ScatterPlot
+    {
+      public static readonly ID ID = new ID("{9FE50555-909D-4DE8-B88E-4C0A67DA4146}");
+
+      public struct Fields
+      {
+        public static readonly ID DateColumnName = new ID("{E130EAE0-809F-429E-9D14-668B39EB9A18}");
+        public static readonly ID ValueColumnName = new ID("{6138DE19-81BF-48BE-B5D6-3FB49B5B5044}");
+
+      }
+    }
+
     public struct Histogram
     {
       public static readonly ID ID = new ID("{96468976-43DC-4594-83DD-4AA7CF7020C2}");

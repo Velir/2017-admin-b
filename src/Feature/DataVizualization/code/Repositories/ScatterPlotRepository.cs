@@ -20,6 +20,9 @@ namespace AdminB2017.Feature.DataVisualization.Repositories
       //TODO Handle null datasource.
       model.SetDataUrl(model.DataSourceItem.Fields[Templates.DataVisualization.Fields.Data]);
 
+      model.DateColumnName = model.DataSourceItem.Fields[Templates.ScatterPlot.Fields.DateColumnName].Value;
+      model.ValueColumnName = model.DataSourceItem.Fields[Templates.ScatterPlot.Fields.ValueColumnName].Value;
+
       return model;
     }
   }

@@ -186,7 +186,7 @@
     <Content Include="App_Config\Include\Feature\AdminB2017.Feature.DataVisualizations.config" />
     <None Include="Properties\PublishProfiles\local.pubxml" />
     <Content Include="Views\Histogram\Histogram.cshtml" />
-    <Content Include="Views\ScatterPlotOverTime\ScatterPlotOverTime.cshtml" />
+    <Content Include="Views\ScatterPlot\Scatter Plot.cshtml" />
     <Content Include="Views\Sunburst\Sunburst.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>

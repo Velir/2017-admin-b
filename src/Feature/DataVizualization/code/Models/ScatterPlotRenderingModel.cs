@@ -6,7 +6,11 @@ using Sitecore.ApplicationCenter.Applications;
 
 namespace AdminB2017.Feature.DataVisualization.Models
 {
-  public class ScatterPlotRenderingModel: DataVisualizationRenderingModelBase { }
+  public class ScatterPlotRenderingModel : DataVisualizationRenderingModelBase
+  {
+    public string DateColumnName { get; set; }
+    public string ValueColumnName { get; set; }
+  }
 
 
 }
