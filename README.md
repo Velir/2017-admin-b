@@ -53,7 +53,13 @@ Select the datasource (or create a new one) and click "OK".
 
 After inserting a data visualization component, component properties will pop up. Configure the properties for the data visualization and click "OK". 
 
-*N.B. In Experience Editor, the data visualization component will show only a static image representing the type of data visualization. View the page in Preview Mode to see the actual visualization.*
+The visualization component will be present on the page. If you created a new datasource, you'll need to update the datasource fields with the data and parameters you want.
+
+![Datasource Parameters](https://i.imgur.com/VIRKPxP.png)
+
+Save and close the datasource, and voilà, you have a visualization!
+
+![Histogram](https://i.imgur.com/M3E3hNZ.png)
 
 ## Warning About External Data Sources
 
