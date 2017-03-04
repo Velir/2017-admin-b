@@ -13,7 +13,7 @@ namespace AdminB2017.Feature.DataVisualization.Models
     private readonly string _id;
     public HistogramRenderingModel()
     {
-      _id = Guid.NewGuid().ToString("N");
+      _id = "a" + Guid.NewGuid().ToString("N");
     }
 
     /// <summary>
