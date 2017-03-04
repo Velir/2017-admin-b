@@ -29,6 +29,8 @@ DatVizPak updates the SXA toolbox with all of the new visualizations:
 
 After inserting a data visualization component, component properties will pop up. Configure the properties for the data visualization and click "OK". 
 
+N.B. In Experience Editor, the data visualization component will show only a static image representing the type of data visualization. View the page in Preview Mode to see the actual visualization.
+
 ## Warning About External Data Sources
 
 DatVizPak allows for content editors to configure visualizations to pull from data sources hosted on an external site. However, the external site must have [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing "CORS") enabled or DatVizPak will not be able to load the data. To visualize data from external sites without CORS enabled, download the data from the external site and upload the data to Sitecore. 
