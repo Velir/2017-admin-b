@@ -1,55 +1,55 @@
 ----item----
 version: 1
-id: {B83CB174-9498-4E18-B110-87E2C69CB614}
+id: {A116D31D-5A55-4A30-B72E-DD44FB102907}
 database: master
-path: /sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Histogram/__Standard Values
-parent: {96468976-43DC-4594-83DD-4AA7CF7020C2}
-name: __Standard Values
+path: /sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Rendering Parameters/Scatter Plot Parameters/ScatterPlotCriteria
+parent: {20DAB03D-D1BA-4194-ABB0-23670347A730}
+name: ScatterPlotCriteria
 master: {00000000-0000-0000-0000-000000000000}
-template: {96468976-43DC-4594-83DD-4AA7CF7020C2}
-templatekey: Histogram
-created: 20170304T134752Z
+template: {E269FBB5-3750-427A-9149-7AA950B49301}
+templatekey: Template section
+created: 20170304T174708Z
 
 ----version----
 language: en
 version: 1
-revision: 647abce6-6665-43ea-a25b-96eb3f89c31c
+revision: 8bee403b-1a5f-44b2-933c-cadaa807979a
 
 ----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 21
 
-sitecore\Admin
+Scatter Plot Criteria
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20170304T134752Z
+20150826T135405Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
 key: __created by
 content-length: 14
 
-sitecore\Admin
+sitecore\admin
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-647abce6-6665-43ea-a25b-96eb3f89c31c
+8bee403b-1a5f-44b2-933c-cadaa807979a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20170304T134819Z
+20170304T182243Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

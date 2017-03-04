@@ -1,19 +1,19 @@
 ----item----
 version: 1
-id: {B83CB174-9498-4E18-B110-87E2C69CB614}
+id: {BF55A443-A35D-4097-8948-F3331406C6D7}
 database: master
-path: /sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Histogram/__Standard Values
-parent: {96468976-43DC-4594-83DD-4AA7CF7020C2}
+path: /sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Scatter Plot/__Standard Values
+parent: {9FE50555-909D-4DE8-B88E-4C0A67DA4146}
 name: __Standard Values
 master: {00000000-0000-0000-0000-000000000000}
-template: {96468976-43DC-4594-83DD-4AA7CF7020C2}
-templatekey: Histogram
-created: 20170304T134752Z
+template: {9FE50555-909D-4DE8-B88E-4C0A67DA4146}
+templatekey: Scatter Plot
+created: 20170304T174814Z
 
 ----version----
 language: en
 version: 1
-revision: 647abce6-6665-43ea-a25b-96eb3f89c31c
+revision: 13d292ce-97ea-451f-83d6-78c2eeea673d
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -42,14 +42,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-647abce6-6665-43ea-a25b-96eb3f89c31c
+13d292ce-97ea-451f-83d6-78c2eeea673d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20170304T134819Z
+20170304T174814Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

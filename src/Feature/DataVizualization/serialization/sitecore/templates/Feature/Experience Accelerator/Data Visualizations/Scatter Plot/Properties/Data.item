@@ -1,33 +1,33 @@
 ----item----
 version: 1
-id: {146AFEF6-F1E0-4804-BC28-0FAA3275035D}
+id: {3749B5D1-E9B7-40F0-9F75-4EF7146D0020}
 database: master
-path: /sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Histogram/Properties/Show Labels
-parent: {3047806A-5DA6-4494-BB2A-DEDD4E1D495F}
-name: Show Labels
+path: /sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Scatter Plot/Properties/Data
+parent: {556820C0-4433-4CCD-B46E-8772109570A9}
+name: Data
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
-created: 20170304T134634Z
+created: 20170304T174814Z
 
 ----field----
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 8
+content-length: 12
 
-Checkbox
+General Link
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
 content-length: 3
 
-500
+300
 ----version----
 language: en
 version: 1
-revision: b12748da-9d5a-4086-b8c2-c290755cbd07
+revision: 2c692f6e-ee03-4030-bd98-a37cc84b754b
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -56,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b12748da-9d5a-4086-b8c2-c290755cbd07
+2c692f6e-ee03-4030-bd98-a37cc84b754b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20170304T134634Z
+20170304T182236Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
