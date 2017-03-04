@@ -16,7 +16,7 @@ name: __Base template
 key: __base template
 content-length: 77
 
-{1930BBEB-7805-471A-A3BE-4858AC7CF696}|{550F06C1-039C-4E4B-A59D-B9E34FB4EE8A}
+{1930BBEB-7805-471A-A3BE-4858AC7CF696}|{4FAB734C-3BAB-455A-9E3D-4FC82C52F13C}
 ----field----
 field: {F7D48A55-2158-4F02-9356-756654404F73}
 name: __Standard values
@@ -34,7 +34,7 @@ Office/32x32/sun.png
 ----version----
 language: en
 version: 1
-revision: 5600124b-b4c8-49e1-b572-0a50c8b1b799
+revision: caf68d92-50a0-44f7-b204-4b249d5e9a67
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -56,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5600124b-b4c8-49e1-b572-0a50c8b1b799
+caf68d92-50a0-44f7-b204-4b249d5e9a67
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20170304T211656Z
+20170304T220555Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
