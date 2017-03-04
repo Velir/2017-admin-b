@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{024792B1-D359-4904-A3E2-BAA59AB81F34}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{C79C9D7A-C338-4960-8F3F-57BE5A8DFCA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{9F027D3C-EB5E-4DA7-876B-F32F8C7FDB02}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{0CE58ECD-13A7-4F1D-AFB9-D2C84320DF09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{D345910E-FF18-487D-AA6F-F9FEEF8C36C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website", "src\Project\Website\code\Website.csproj", "{35AB5B67-1774-4FEA-A05C-28E996F21C41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35AB5B67-1774-4FEA-A05C-28E996F21C41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35AB5B67-1774-4FEA-A05C-28E996F21C41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35AB5B67-1774-4FEA-A05C-28E996F21C41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35AB5B67-1774-4FEA-A05C-28E996F21C41}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D345910E-FF18-487D-AA6F-F9FEEF8C36C0} = {0CE58ECD-13A7-4F1D-AFB9-D2C84320DF09}
+		{35AB5B67-1774-4FEA-A05C-28E996F21C41} = {D345910E-FF18-487D-AA6F-F9FEEF8C36C0}
+	EndGlobalSection
+EndGlobal
