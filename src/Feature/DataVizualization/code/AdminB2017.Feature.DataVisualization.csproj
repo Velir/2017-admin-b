@@ -48,6 +48,9 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>..\..\..\..\..\..\Websites\hack2017b\Website\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Kernel.NoReferences.8.2.161221\lib\NET452\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
@@ -105,6 +108,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Config\Include\Feature\AdminB2017.Feature.DataVisualizations.config" />
     <None Include="Properties\PublishProfiles\local.pubxml" />
     <Content Include="Views\Histogram\Histogram.cshtml" />
     <Content Include="Views\ScatterPlotOverTime\ScatterPlotOverTime.cshtml" />
@@ -112,7 +116,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HistogramController.cs" />
+    <Compile Include="Models\HistogramRenderingModel.cs" />
+    <Compile Include="Pipelines\IoC\RegisterDataVisualizationServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\HistogramRepository.cs" />
+    <Compile Include="Repositories\IHistogramRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Views\web.config" />
@@ -125,7 +133,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="Views\DataVisualization\" />
   </ItemGroup>
   <PropertyGroup>
