@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{024792B1-D359-4904-A3E2-BAA59AB81F34}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{C79C9D7A-C338-4960-8F3F-57BE5A8DFCA6}"
 EndProject
@@ -15,6 +20,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{D345
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website", "src\Project\Website\code\Website.csproj", "{35AB5B67-1774-4FEA-A05C-28E996F21C41}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataVisualization", "DataVisualization", "{14C6C433-C2EC-4940-A7C1-BFC6CAEB3C99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataVisualization", "src\Feature\DataVizualization\code\DataVisualization.csproj", "{C85B7450-02FC-43CE-A6F9-0989876A92EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +34,10 @@ Global
 		{35AB5B67-1774-4FEA-A05C-28E996F21C41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35AB5B67-1774-4FEA-A05C-28E996F21C41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35AB5B67-1774-4FEA-A05C-28E996F21C41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C85B7450-02FC-43CE-A6F9-0989876A92EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C85B7450-02FC-43CE-A6F9-0989876A92EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C85B7450-02FC-43CE-A6F9-0989876A92EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C85B7450-02FC-43CE-A6F9-0989876A92EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,5 +45,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D345910E-FF18-487D-AA6F-F9FEEF8C36C0} = {0CE58ECD-13A7-4F1D-AFB9-D2C84320DF09}
 		{35AB5B67-1774-4FEA-A05C-28E996F21C41} = {D345910E-FF18-487D-AA6F-F9FEEF8C36C0}
+		{14C6C433-C2EC-4940-A7C1-BFC6CAEB3C99} = {C79C9D7A-C338-4960-8F3F-57BE5A8DFCA6}
+		{C85B7450-02FC-43CE-A6F9-0989876A92EA} = {14C6C433-C2EC-4940-A7C1-BFC6CAEB3C99}
 	EndGlobalSection
 EndGlobal
