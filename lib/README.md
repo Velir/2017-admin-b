@@ -1,6 +1,6 @@
 # SXA Dependencies
 
-Since SXA DLLs are not available yet on Sitecore's NuGet feed, it is necessary to add them here.
+Because SXA DLLs are not available yet on Sitecore's NuGet feed, it is necessary to add them here.
 
 The following are required:  
 
