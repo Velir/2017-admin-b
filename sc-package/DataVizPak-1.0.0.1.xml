@@ -1,0 +1,258 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>DataVizPak</PackageName>
+      <Author>Team admin/b (https://github.com/Velir/admin-b/wiki/Team-admin-b)</Author>
+      <Version>1.0.0.1</Version>
+      <Revision />
+      <License />
+      <Comment>Before you can install DataVizPak, you need to install the following items:
+
+ - Sitecore 8.2 Update 2 (rev 161221) (https://dev.sitecore.net/Downloads/Sitecore_Experience_Platform/82/Sitecore_Experience_Platform_82_Update2.aspx)
+ - Sitecore Powershell Extensions 4.3 (https://marketplace.sitecore.net/Modules/S/Sitecore_PowerShell_console.aspx)
+    - N.B. Version 4.4 of Sitecore Powershell Extensions will cause errors.
+ - Sitecore Experience Accelerator 1.2 (https://dev.sitecore.net/Downloads/Sitecore_Experience_Accelerator/12/Sitecore_Experience_Accelerator_12_Initial_Release.aspx)</Comment>
+      <Attributes />
+      <Readme>Readme.md - https://github.com/Velir/admin-b/blob/master/README.md
+Wiki - https://github.com/Velir/admin-b/wiki</Readme>
+      <Publisher>Velir Studios</Publisher>
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xfiles>
+      <Entries>
+        <x-item>/bin/AdminB2017.Feature.DataVisualization.dll</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>DataVizPak - Assemblies</Name>
+    </xfiles>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/Feature/AdminB2017.Feature.DataVisualizations.config</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>DataVisPak - Config</Name>
+    </xfiles>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/layout/Renderings/Feature/Experience Accelerator/Data Visualizations/{5374CBD8-E2B0-4DB4-A161-E2F681E48E1E}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/Feature/Experience Accelerator/Data Visualizations/Histogram/{61162FC2-3D72-4115-911B-3710C224A073}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/Feature/Experience Accelerator/Data Visualizations/Scatter Plot/{7307D7A9-98D8-4FE6-AA03-3CF0CE336E0B}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/Feature/Experience Accelerator/Data Visualizations/Sunburst/{BD5EEF49-DBE3-4B28-96CD-AB2FE9E50F0D}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>DataVizPak - Layouts</Name>
+    </xitems>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/system/Settings/Feature/Experience Accelerator/Data Visualizations/{23DA4A5D-3DCB-4976-84AC-FD8818267933}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Feature/Experience Accelerator/Data Visualizations/Enums/{746C692D-A34E-4571-AE90-3C155DC26E0A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Feature/Experience Accelerator/Data Visualizations/Enums/Time Periods/{88EE8EA1-ADC0-46CD-B74B-F3B2E08C6895}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Feature/Experience Accelerator/Data Visualizations/Enums/Time Periods/Day/{E8B36EFA-EDBE-44F8-AE31-ECF429FE5623}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Feature/Experience Accelerator/Data Visualizations/Enums/Time Periods/Month/{8BC7C89D-DAA5-4D61-8A60-3BE065133B40}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Feature/Experience Accelerator/Data Visualizations/Enums/Time Periods/Week/{3FEA69CE-9345-41F8-A908-1853B94F9182}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Feature/Experience Accelerator/Data Visualizations/Site Setup/{7FF829B2-79B3-4ABD-B59C-7DC8721684CA}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Feature/Experience Accelerator/Data Visualizations/Site Setup/Add Available Renderings/{2862F259-4D12-4E33-BEAA-358310A93999}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Feature/Experience Accelerator/Data Visualizations/Site Setup/Add Data Visualizations Data Item/{743BD104-E73D-4B45-8FC2-E3D83518868E}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>DataVizPak - System Settings</Name>
+    </xitems>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/_Data Visualizaton/{4FAB734C-3BAB-455A-9E3D-4FC82C52F13C}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/_Data Visualizaton/Data/{73D4BF7A-4886-4E31-9091-A49A72682026}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/_Data Visualizaton/Data/Data/{ECD7765B-8B05-4404-AB91-238E69446C2E}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/{6763BA66-C61C-4649-9FFD-58DBD9050A12}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Data Visualizations Folder/__Standard Values/{56F57CB3-79C4-413D-B58F-0D51421920BB}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Data Visualizations Folder/{3E5496B6-F964-44E4-A8A6-98D4CF339177}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Histogram/__Standard Values/{B83CB174-9498-4E18-B110-87E2C69CB614}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Histogram/{96468976-43DC-4594-83DD-4AA7CF7020C2}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Histogram/Properties/{3047806A-5DA6-4494-BB2A-DEDD4E1D495F}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Histogram/Properties/Date Column Name/{6A2E628C-4B5D-427C-9CB7-08A0BDF3DBF0}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Histogram/Properties/From Date/{F34BE7C0-C003-4D3A-A79C-2E62AB77FCF4}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Histogram/Properties/Time Period/{77C78985-50DA-41E0-AD90-9F02D4C8EB63}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Histogram/Properties/To Date/{8628C4F2-9684-44C1-92FE-7EAB7E0825E6}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Rendering Parameters/{021D3BB6-26B9-43AF-909E-B7FF0DDA1C81}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Rendering Parameters/Histogram Parameters/__Standard Values/{E3A47B6E-D204-4EED-AD9E-E133D328B99D}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Rendering Parameters/Histogram Parameters/{8B8DFAD1-0E15-4E50-A06A-7927A6F38CF0}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Rendering Parameters/Histogram Parameters/HistogramCriteria/{10D53722-A945-49FA-BD23-38B9BC06F654}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Rendering Parameters/Histogram Parameters/HistogramCriteria/Show Labels/{BB602790-2EA9-4D31-BF9C-1C7F0BA6A9CD}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Rendering Parameters/Scatter Plot Parameters/__Standard Values/{14F474E3-F345-422A-BD80-531F842A421D}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Rendering Parameters/Scatter Plot Parameters/{20DAB03D-D1BA-4194-ABB0-23670347A730}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Rendering Parameters/Scatter Plot Parameters/ScatterPlotCriteria/{A116D31D-5A55-4A30-B72E-DD44FB102907}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Scatter Plot/__Standard Values/{BF55A443-A35D-4097-8948-F3331406C6D7}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Scatter Plot/{9FE50555-909D-4DE8-B88E-4C0A67DA4146}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Scatter Plot/Properties/{556820C0-4433-4CCD-B46E-8772109570A9}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Scatter Plot/Properties/DateColumnName/{E130EAE0-809F-429E-9D14-668B39EB9A18}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Scatter Plot/Properties/ValueColumnName/{6138DE19-81BF-48BE-B5D6-3FB49B5B5044}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Sunburst/__Standard Values/{0331FB32-96FE-476F-9A97-F890E0A75F36}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Sunburst/{550F06C1-039C-4E4B-A59D-B9E34FB4EE8A}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Sunburst/Properties/{80D63491-C48C-4671-AB78-5D1DB4835363}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Data Visualizations/Sunburst/Properties/Value Field Name/{69306041-8898-4774-9322-5E98F4113068}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>DataVizPak - Templates</Name>
+    </xitems>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/media library/Themes/Basic/styles/component-histogram/{4A64AE58-AA94-4D5B-986F-F822B8C2B0B5}/invariant/0</x-item>
+        <x-item>/master/sitecore/media library/Themes/Basic/styles/component-scatterplot/{98C4ADB5-DEA7-45BB-BD71-62D877FC650A}/invariant/0</x-item>
+        <x-item>/master/sitecore/media library/Themes/Basic/styles/component-sunburst/{60131FEC-E068-42F4-8E69-6C2DBA626126}/invariant/0</x-item>
+        <x-item>/master/sitecore/media library/Themes/Wireframe/styles/component-histogram/{FDE7FB0B-CBE0-4365-B37A-325B097B6447}/invariant/0</x-item>
+        <x-item>/master/sitecore/media library/Themes/Wireframe/styles/component-scatterplot/{7715BFB3-E386-4D46-90ED-AD63E49C2EF4}/invariant/0</x-item>
+        <x-item>/master/sitecore/media library/Themes/Wireframe/styles/component-sunburst/{1DF84F24-B571-414F-B71C-496EF67E7CDF}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>DataVizPak - Styles</Name>
+    </xitems>
+    <xfiles>
+      <Entries>
+        <x-item>/Views/Histogram/Histogram.cshtml</x-item>
+        <x-item>/Views/ScatterPlot/Scatter Plot.cshtml</x-item>
+        <x-item>/Views/Sunburst/Sunburst.cshtml</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>DataVizPak - Views</Name>
+    </xfiles>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/templates/Branches/Feature/Experience Accelerator/Data Visualizations/{AD94B3A4-A22A-43F2-9696-8048253AB426}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Branches/Feature/Experience Accelerator/Data Visualizations/Available Data Visualizations/$name/{3EE62AB1-3118-486B-BB95-128569CC8AC5}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Branches/Feature/Experience Accelerator/Data Visualizations/Available Data Visualizations/{BF33E4B4-2D67-43F1-93A4-13F991E2D665}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>DataVizPak - Branch Templates</Name>
+    </xitems>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>
