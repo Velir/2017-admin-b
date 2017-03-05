@@ -24,11 +24,11 @@ Before you can install DataVizPak, you need to install the following items:
 
 ## Available Visualizations
 
-DataVizPak comes with several data visualizations out of the box.
+DataVizPak comes with several data visualizations out of the box, based on the popular [D3.js](http://D3js.org) library.
 
 ### Histogram
 
-Histograms are graphical representations of the frequency of data events, usually over a range of time (read more at [Wikipedia](https://en.wikipedia.org/wiki/Histogram "Wikipedia")). 
+[Histograms](https://bl.ocks.org/mbostock/3048450) are graphical representations of the frequency of data events, usually over a range of time.
 
 #### Histogram Parameters
 
@@ -46,7 +46,7 @@ Additionally, the "Show Labels" check box is available on the component properti
 
 #### Scatter Plot Parameters
 
-Scatter Plot visualizations in DataVizPak have several fields required for configuration. These fields are available on the datasource item. 
+[Scatter Plot](http://bl.ocks.org/d3noob/036d13e5173de69f7758091ba9a2df2b) visualizations in DataVizPak have several fields required for configuration. These fields are available on the datasource item. 
 
 * **Data**: A link to the actual source of data. The data must be in a comma-separated list (CSV). 
 * **DateColumnName**: The name of the column in the data that represents the date to be used for the x-axis. 
@@ -59,7 +59,7 @@ Scatter plots are plots of data points on a Cartesian graph (read more at [Wikip
 
 ### Sunburst
 
-Sunbursts are a form of pie chart that use multilevel concentric circles to represent hierarchical data (read more at [Wikipedia](https://en.wikipedia.org/wiki/Pie_chart#Ring_chart_.2F_Sunburst_chart_.2F_Multilevel_pie_chart "Wikipedia")). The sunburst visualization provided in DataVizPak is interactive, allowing for zooming in and out to examine data more closely. 
+[Sunbursts](https://bl.ocks.org/maybelinot/5552606564ef37b5de7e47ed2b7dc099) are a form of pie chart that use multilevel concentric circles to represent hierarchical data (read more at [Wikipedia](https://en.wikipedia.org/wiki/Pie_chart#Ring_chart_.2F_Sunburst_chart_.2F_Multilevel_pie_chart "Wikipedia")). The sunburst visualization provided in DataVizPak is interactive, allowing for zooming in and out to examine data more closely. 
 
 ## Using DataVizPak
 
