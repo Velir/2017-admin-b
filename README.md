@@ -4,7 +4,7 @@
 
 The Data Visualization Package (DataVizPak) for Sitecore Experience Accelerator (SXA) incorporates powerful data-driven visualizations into the standard SXA toolbox. SXA offers a wide range of components for content authors to speed up production of websites. DataVizPak extends the available components with powerful data visualizations that content editors can use to add a new dimension of content to their websites.
 
-## Prerequisites
+## Dependencies
 
 Before you can install DataVizPak, you need to install the following items:
 
@@ -44,6 +44,10 @@ Histogram visualizations in DataVizPak have several fields required for configur
 
 Additionally, the "Show Labels" check box is available on the component properties. If checked, the histogram will include labels of the data value on each column. 
 
+### Scatter Plot 
+
+Scatter plots are plots of data points on a Cartesian graph (read more at [Wikipedia](https://en.wikipedia.org/wiki/Scatter_plot "Wikipedia")).
+
 #### Scatter Plot Parameters
 
 [Scatter Plot](http://bl.ocks.org/d3noob/036d13e5173de69f7758091ba9a2df2b) visualizations in DataVizPak have several fields required for configuration. These fields are available on the datasource item. 
@@ -53,13 +57,19 @@ Additionally, the "Show Labels" check box is available on the component properti
 * **Date Column Name**: The name of the column in the data that represents the value to be displayed the the y-axis.
  * _N.B. This field is case-sensitive._
 
-### Scatter Plot 
-
-Scatter plots are plots of data points on a Cartesian graph (read more at [Wikipedia](https://en.wikipedia.org/wiki/Scatter_plot "Wikipedia")).
-
 ### Sunburst
 
 [Sunbursts](https://bl.ocks.org/maybelinot/5552606564ef37b5de7e47ed2b7dc099) are a form of pie chart that use multilevel concentric circles to represent hierarchical data (read more at [Wikipedia](https://en.wikipedia.org/wiki/Pie_chart#Ring_chart_.2F_Sunburst_chart_.2F_Multilevel_pie_chart "Wikipedia")). The sunburst visualization provided in DataVizPak is interactive, allowing for zooming in and out to examine data more closely. 
+
+![Sunburst Example](https://i.imgur.com/eOU2SC6.png)
+
+#### Sunburst Parameters
+
+Sunburst visualizations in DataVizPak have two required for configuration. These fields are available on the datasource item. 
+
+* **Data**: A link to the actual source of data. The data must be in a JSON file. 
+* **Value Field Name**: The name of the field in the data that represents the value of each section. 
+ * _N.B. This field is case-sensitive._
 
 ## Using DataVizPak
 
