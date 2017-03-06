@@ -137,6 +137,10 @@ Want to develop for DataVizPak? Great! To get started developing for DataVizPak,
  * See [here](/lib#sxa-dependencies "/lib/readme.md") for details.
 * It's probably a good idea to either publish the entire site or publish all non-content items, just to be sure. 
 
+## Video Intro
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CODJB6waEBk" frameborder="0" allowfullscreen></iframe>
+[![DataVizPak Video](https://img.youtube.com/vi/CODJB6waEBk/0.jpg)](https://www.youtube.com/watch?v=CODJB6waEBk)
+
 ## About the Authors
 
 DataVizPak was created by the [Velir](https://www.velir.com "Velir") [team admin/b](https://github.com/Velir/admin-b/wiki/Team-admin-b "admin/b") (Dan Solovay, Nicole Durand, Ed Schwehm) as part of [2017 Sitecore Hackathon](http://www.sitecorehackathon.org/sitecore-hackathon-2017/ "Sitecore Hackathon 2017").
